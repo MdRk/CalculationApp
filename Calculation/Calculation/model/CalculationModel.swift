@@ -86,4 +86,19 @@ class CalculationModel: NSObject {
         return (2.0*3.14*value1*value1) + (2.0*3.14*value1*value2)
     }
     
+    //四角錐の表面積
+    func areaSquarePyramid(value1: Double, value2: Double, value3: Double) -> Double{
+        return (value1*value2) + (value1 * sqrt(value3*value3 + (value2/2.0)*(value2/2.0))) + (value2 * sqrt(value3*value3 + (value1/2.0)*(value1/2.0)))
+    }
+    
+    //円錐の表面積
+    func areaCone(value1: Double, value2: Double) -> Double{
+        return (3.14 * (value1*value1)) + (3.14 * value1 * value2)
+    }
+    
+    //球体の表面積
+    func areaSphere(value1: Double) -> Double{
+        return 4.0 * 3.14 * (value1*value1)
+    }
+    
 }
