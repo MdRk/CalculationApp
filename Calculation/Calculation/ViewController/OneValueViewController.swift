@@ -35,6 +35,14 @@ class OneValueViewController: UIViewController {
             officialImageView.image = UIImage(named: "円")
             value1Label.text = "半径"
             break
+        case "立方体":
+            officialImageView.image = UIImage(named: "立方体表面積")
+            value1Label.text = "a"
+            break
+        case "球体":
+            officialImageView.image = UIImage(named: "球体表面積")
+            value1Label.text = "半径"
+            break
         default:
             break
         }
@@ -46,6 +54,14 @@ class OneValueViewController: UIViewController {
         switch self.selectedCell {
         case "円":
             answer = calculation.circle(value1: value1)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "立方体":
+            answer = calculation.areaCube(value1: value1)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "球体":
+            answer = calculation.areaSphere(value1: value1)
             answerLabel.text = String(format: "%0.2f", answer)
             break
         default:

@@ -83,6 +83,16 @@ class TwoValueViewController: UIViewController {
             value1Label.text = "弧"
             value2Label.text = "半径"
             break
+        case "円柱":
+            officialImageView.image = UIImage(named: "円柱表面積")
+            value1Label.text = "半径"
+            value2Label.text = "高さ"
+            break
+        case "円錐":
+            officialImageView.image = UIImage(named: "円錐表面積")
+            value1Label.text = "半径"
+            value2Label.text = "母線"
+            break
         default:
             break
         }
@@ -137,6 +147,14 @@ class TwoValueViewController: UIViewController {
             break
         case "扇形２":
             answer = calculation.sector2(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "円柱":
+            answer = calculation.areaCylinder(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "円錐":
+            answer = calculation.areaCone(value1: value1, value2: value2)
             answerLabel.text = String(format: "%0.2f", answer)
             break
         default:
