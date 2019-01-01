@@ -1,0 +1,70 @@
+//
+//  OneValueViewController.swift
+//  Calculation
+//
+//  Created by 前田陸 on 2018/12/29.
+//  Copyright © 2018年 陸　前田. All rights reserved.
+//
+
+import UIKit
+
+class OneValueViewController: UIViewController {
+
+    var selectedCell: String = ""
+    
+    var calculation = CalculationModel()
+    
+    @IBOutlet weak var officialImageView: UIImageView!
+    @IBOutlet weak var value1Label: UILabel!
+    @IBOutlet weak var value1TextField: UITextField!
+    @IBOutlet weak var answerLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        imageChange()
+        
+        self.navigationItem.title = self.selectedCell
+        
+        self.value1TextField.keyboardType = UIKeyboardType.numberPad
+    }
+    
+    func imageChange() {
+        switch self.selectedCell {
+        case "円":
+            officialImageView.image = UIImage(named: "円")
+            value1Label.text = "半径"
+            break
+        default:
+            break
+        }
+    }
+    
+    func calculation(value1: Double) {
+        var answer: Double = 0
+        
+        switch self.selectedCell {
+        case "円":
+            answer = calculation.circle(value1: value1)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        default:
+            break
+        }
+    }
+    
+    @IBAction func tapAnswerButton(_ sender: UIButton) {
+        calculation(value1: Double(value1TextField.text!)!)
+    }
+    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

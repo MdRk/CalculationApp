@@ -1,0 +1,84 @@
+//
+//  CalculationModel.swift
+//  Calculation
+//
+//  Created by 前田陸 on 2018/11/30.
+//  Copyright © 2018年 陸　前田. All rights reserved.
+//
+
+import Foundation
+
+class CalculationModel: NSObject {
+    
+    //加算
+    func addition(value1: Double, value2: Double) -> Double{
+        return value1 + value2
+    }
+    
+    /*//加算
+    func addition <T>(value1: T, value2: T) -> T{
+        return value1 + value2
+    }*/
+    
+    //減算
+    func subtraction(value1: Double, value2: Double) -> Double{
+        return value1 - value2
+    }
+    
+    //乗算
+    func multiplication(value1: Double, value2: Double) -> Double{
+        return value1 * value2
+    }
+    
+    //除算
+    func division(value1: Double, value2: Double) -> Double{
+        return value1 / value2
+    }
+    
+    //累乗
+    func power(value1: Double, value2: Double) -> Double{
+        var answer = 1.0
+        if(value2 != 0){
+            for _ in 1...Int(value2) {
+                answer = multiplication(value1: answer, value2: value1)
+            }
+        } else if (value1 == 0){
+            answer = 0
+        }
+        return answer
+    }
+    
+    //三角形、ひし形
+    func triangle(value1: Double, value2: Double) -> Double{
+        return (value1 * value2) / 2.0
+    }
+    
+    //円
+    func circle(value1: Double) -> Double{
+        return (value1 * value1) * 3.14
+    }
+    
+    //台形
+    func trapezoid(value1: Double, value2: Double, value3: Double) -> Double{
+        return (value1+value2)*value3/2.0
+    }
+    
+    //扇形
+    func sector1(value1: Double, value2: Double) -> Double{
+        return 3.14*value1*value1*(value2/360.0)
+    }
+    func sector2(value1: Double, value2: Double) -> Double{
+        return value1*value2/2.0
+    }
+    
+    //立方体の表面積
+    func areaCube(value1: Double) -> Double{
+        return (value1 * value1) * 6.0
+    }
+    
+    //直方体の表面積
+    func areaCuboid(value1: Double, value2: Double, value3: Double) -> Double{
+        return 2.0 * ((value1*value2) + (value2*value3) + (value3*value1))
+    }
+    
+}

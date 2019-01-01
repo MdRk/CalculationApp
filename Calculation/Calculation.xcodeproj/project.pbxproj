@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32181C0F21955446009290A9 /* ElementaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C0E21955446009290A9 /* ElementaryTableViewController.swift */; };
+		32181C1121955463009290A9 /* MiddleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C1021955463009290A9 /* MiddleTableViewController.swift */; };
+		32181C132195547A009290A9 /* HighTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C122195547A009290A9 /* HighTableViewController.swift */; };
+		32181C1521955497009290A9 /* ElementaryTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C1421955497009290A9 /* ElementaryTableVC.storyboard */; };
+		32181C17219554A9009290A9 /* MiddleTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C16219554A9009290A9 /* MiddleTableVC.storyboard */; };
+		32181C19219554BF009290A9 /* HighTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C18219554BF009290A9 /* HighTableVC.storyboard */; };
+		32181C1B21957EC8009290A9 /* ElementaryNextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C1A21957EC8009290A9 /* ElementaryNextTableViewController.swift */; };
+		32181C1F21957F13009290A9 /* ElementaryNextTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C1E21957F13009290A9 /* ElementaryNextTableVC.storyboard */; };
+		32181C3B21997C55009290A9 /* TwoValueVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C3A21997C55009290A9 /* TwoValueVC.storyboard */; };
+		32181C44219983ED009290A9 /* TwoValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C43219983ED009290A9 /* TwoValueViewController.swift */; };
+		3218E10621D7490000916728 /* OneValueVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3218E10521D7490000916728 /* OneValueVC.storyboard */; };
+		3218E10821D7493600916728 /* OneValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3218E10721D7493600916728 /* OneValueViewController.swift */; };
+		3218E10A21D7661000916728 /* 長方形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E10921D7661000916728 /* 長方形.png */; };
+		3218E11021D76A6A00916728 /* 平行四辺形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E10F21D76A6A00916728 /* 平行四辺形.png */; };
+		3218E11221D76BE700916728 /* 三角形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11121D76BE700916728 /* 三角形.png */; };
+		3218E11421D76E1C00916728 /* 台形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11321D76E1C00916728 /* 台形.png */; };
+		3218E11621D7A7A400916728 /* ひし形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11521D7A7A400916728 /* ひし形.png */; };
+		3218E11821D83C2700916728 /* 円.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11721D83C2700916728 /* 円.png */; };
+		3218E11C21D866A300916728 /* ThreeValueVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11B21D866A300916728 /* ThreeValueVC.storyboard */; };
+		3218E11E21D866C800916728 /* ThreeValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3218E11D21D866C800916728 /* ThreeValueViewController.swift */; };
+		3218E12021D885EB00916728 /* 扇形1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11F21D885EB00916728 /* 扇形1.png */; };
+		3218E12221DA02B900916728 /* 扇形2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12121DA02B900916728 /* 扇形2.png */; };
+		3218E12721DB49E600916728 /* 円錐表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12321DB49E500916728 /* 円錐表面積.png */; };
+		3218E12821DB49E600916728 /* 円柱表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12421DB49E600916728 /* 円柱表面積.png */; };
+		3218E12921DB49E600916728 /* 球体表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12521DB49E600916728 /* 球体表面積.png */; };
+		3218E12A21DB49E600916728 /* 四角錐表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12621DB49E600916728 /* 四角錐表面積.png */; };
+		3218E12D21DB4A1100916728 /* 立方体表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12B21DB4A1100916728 /* 立方体表面積.png */; };
+		3218E12E21DB4A1100916728 /* 直方体表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12C21DB4A1100916728 /* 直方体表面積.png */; };
+		3239038021B0D2AA00E518EE /* 累乗.png in Resources */ = {isa = PBXBuildFile; fileRef = 3239037F21B0D2AA00E518EE /* 累乗.png */; };
+		3239038521B0DB6500E518EE /* 正方形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3239038421B0DB6500E518EE /* 正方形.png */; };
+		3239038721B0DE6600E518EE /* CalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038621B0DE6600E518EE /* CalculationModel.swift */; };
+		3239038921B0EB3F00E518EE /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038821B0EB3F00E518EE /* CellModel.swift */; };
+		3239038B21B0EC0100E518EE /* ElementaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038A21B0EC0100E518EE /* ElementaryModel.swift */; };
+		3239038D21B0ECBA00E518EE /* FourListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038C21B0ECBA00E518EE /* FourListModel.swift */; };
+		3239038F21B0EDCD00E518EE /* AreaListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038E21B0EDCD00E518EE /* AreaListModel.swift */; };
+		3239039121B0EDE600E518EE /* VolumeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039021B0EDE600E518EE /* VolumeListModel.swift */; };
+		3239039321B0EDFA00E518EE /* CircleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039221B0EDFA00E518EE /* CircleListModel.swift */; };
+		3239039521B0EE0F00E518EE /* SpeedListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039421B0EE0F00E518EE /* SpeedListModel.swift */; };
+		3239039721B0EE3800E518EE /* AverageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039621B0EE3800E518EE /* AverageListModel.swift */; };
+		3239039921B0EE4E00E518EE /* RateListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039821B0EE4E00E518EE /* RateListModel.swift */; };
+		3239039B21B0EE6300E518EE /* ConcentrationListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039A21B0EE6300E518EE /* ConcentrationListModel.swift */; };
+		325EC29121AFCA07002C2312 /* 除算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC28D21AFCA07002C2312 /* 除算.png */; };
+		325EC29221AFCA07002C2312 /* 加算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC28E21AFCA07002C2312 /* 加算.png */; };
+		325EC29321AFCA07002C2312 /* 減算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC28F21AFCA07002C2312 /* 減算.png */; };
+		325EC29421AFCA07002C2312 /* 乗算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC29021AFCA07002C2312 /* 乗算.png */; };
+		32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AE9821940F2700C14C20 /* AppDelegate.swift */; };
+		32B3AE9B21940F2700C14C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AE9A21940F2700C14C20 /* ViewController.swift */; };
+		32B3AE9E21940F2700C14C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AE9C21940F2700C14C20 /* Main.storyboard */; };
+		32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AE9F21940F2900C14C20 /* Assets.xcassets */; };
+		32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */; };
+		32B3AEAE21940F2900C14C20 /* CalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AEAD21940F2900C14C20 /* CalculationTests.swift */; };
+		32B3AEB921940F2900C14C20 /* CalculationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AEB821940F2900C14C20 /* CalculationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32B3AEAA21940F2900C14C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B3AE8D21940F2700C14C20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32B3AE9421940F2700C14C20;
+			remoteInfo = Calculation;
+		};
+		32B3AEB521940F2900C14C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B3AE8D21940F2700C14C20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32B3AE9421940F2700C14C20;
+			remoteInfo = Calculation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32181C0E21955446009290A9 /* ElementaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryTableViewController.swift; sourceTree = "<group>"; };
+		32181C1021955463009290A9 /* MiddleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleTableViewController.swift; sourceTree = "<group>"; };
+		32181C122195547A009290A9 /* HighTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighTableViewController.swift; sourceTree = "<group>"; };
+		32181C1421955497009290A9 /* ElementaryTableVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ElementaryTableVC.storyboard; sourceTree = "<group>"; };
+		32181C16219554A9009290A9 /* MiddleTableVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MiddleTableVC.storyboard; sourceTree = "<group>"; };
+		32181C18219554BF009290A9 /* HighTableVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HighTableVC.storyboard; sourceTree = "<group>"; };
+		32181C1A21957EC8009290A9 /* ElementaryNextTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryNextTableViewController.swift; sourceTree = "<group>"; };
+		32181C1E21957F13009290A9 /* ElementaryNextTableVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ElementaryNextTableVC.storyboard; sourceTree = "<group>"; };
+		32181C3A21997C55009290A9 /* TwoValueVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TwoValueVC.storyboard; sourceTree = "<group>"; };
+		32181C43219983ED009290A9 /* TwoValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoValueViewController.swift; sourceTree = "<group>"; };
+		3218E10521D7490000916728 /* OneValueVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneValueVC.storyboard; sourceTree = "<group>"; };
+		3218E10721D7493600916728 /* OneValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneValueViewController.swift; sourceTree = "<group>"; };
+		3218E10921D7661000916728 /* 長方形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "長方形.png"; sourceTree = "<group>"; };
+		3218E10F21D76A6A00916728 /* 平行四辺形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "平行四辺形.png"; sourceTree = "<group>"; };
+		3218E11121D76BE700916728 /* 三角形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "三角形.png"; sourceTree = "<group>"; };
+		3218E11321D76E1C00916728 /* 台形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "台形.png"; sourceTree = "<group>"; };
+		3218E11521D7A7A400916728 /* ひし形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひし形.png"; sourceTree = "<group>"; };
+		3218E11721D83C2700916728 /* 円.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円.png"; sourceTree = "<group>"; };
+		3218E11B21D866A300916728 /* ThreeValueVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThreeValueVC.storyboard; sourceTree = "<group>"; };
+		3218E11D21D866C800916728 /* ThreeValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeValueViewController.swift; sourceTree = "<group>"; };
+		3218E11F21D885EB00916728 /* 扇形1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扇形1.png"; sourceTree = "<group>"; };
+		3218E12121DA02B900916728 /* 扇形2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扇形2.png"; sourceTree = "<group>"; };
+		3218E12321DB49E500916728 /* 円錐表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円錐表面積.png"; sourceTree = "<group>"; };
+		3218E12421DB49E600916728 /* 円柱表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円柱表面積.png"; sourceTree = "<group>"; };
+		3218E12521DB49E600916728 /* 球体表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "球体表面積.png"; sourceTree = "<group>"; };
+		3218E12621DB49E600916728 /* 四角錐表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "四角錐表面積.png"; sourceTree = "<group>"; };
+		3218E12B21DB4A1100916728 /* 立方体表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立方体表面積.png"; sourceTree = "<group>"; };
+		3218E12C21DB4A1100916728 /* 直方体表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "直方体表面積.png"; sourceTree = "<group>"; };
+		3239037F21B0D2AA00E518EE /* 累乗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "累乗.png"; sourceTree = "<group>"; };
+		3239038421B0DB6500E518EE /* 正方形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "正方形.png"; sourceTree = "<group>"; };
+		3239038621B0DE6600E518EE /* CalculationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModel.swift; sourceTree = "<group>"; };
+		3239038821B0EB3F00E518EE /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		3239038A21B0EC0100E518EE /* ElementaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryModel.swift; sourceTree = "<group>"; };
+		3239038C21B0ECBA00E518EE /* FourListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourListModel.swift; sourceTree = "<group>"; };
+		3239038E21B0EDCD00E518EE /* AreaListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListModel.swift; sourceTree = "<group>"; };
+		3239039021B0EDE600E518EE /* VolumeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeListModel.swift; sourceTree = "<group>"; };
+		3239039221B0EDFA00E518EE /* CircleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleListModel.swift; sourceTree = "<group>"; };
+		3239039421B0EE0F00E518EE /* SpeedListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedListModel.swift; sourceTree = "<group>"; };
+		3239039621B0EE3800E518EE /* AverageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageListModel.swift; sourceTree = "<group>"; };
+		3239039821B0EE4E00E518EE /* RateListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateListModel.swift; sourceTree = "<group>"; };
+		3239039A21B0EE6300E518EE /* ConcentrationListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationListModel.swift; sourceTree = "<group>"; };
+		325EC28D21AFCA07002C2312 /* 除算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "除算.png"; sourceTree = "<group>"; };
+		325EC28E21AFCA07002C2312 /* 加算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加算.png"; sourceTree = "<group>"; };
+		325EC28F21AFCA07002C2312 /* 減算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "減算.png"; sourceTree = "<group>"; };
+		325EC29021AFCA07002C2312 /* 乗算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "乗算.png"; sourceTree = "<group>"; };
+		32B3AE9521940F2700C14C20 /* Calculation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B3AE9821940F2700C14C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32B3AE9A21940F2700C14C20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32B3AE9D21940F2700C14C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32B3AE9F21940F2900C14C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32B3AEA221940F2900C14C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32B3AEA421940F2900C14C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B3AEA921940F2900C14C20 /* CalculationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B3AEAD21940F2900C14C20 /* CalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationTests.swift; sourceTree = "<group>"; };
+		32B3AEAF21940F2900C14C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B3AEB421940F2900C14C20 /* CalculationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B3AEB821940F2900C14C20 /* CalculationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationUITests.swift; sourceTree = "<group>"; };
+		32B3AEBA21940F2900C14C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32B3AE9221940F2700C14C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B3AEA621940F2900C14C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B3AEB121940F2900C14C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32181C3C21998011009290A9 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				325EC28E21AFCA07002C2312 /* 加算.png */,
+				325EC28F21AFCA07002C2312 /* 減算.png */,
+				325EC29021AFCA07002C2312 /* 乗算.png */,
+				325EC28D21AFCA07002C2312 /* 除算.png */,
+				3239037F21B0D2AA00E518EE /* 累乗.png */,
+				3218E11121D76BE700916728 /* 三角形.png */,
+				3239038421B0DB6500E518EE /* 正方形.png */,
+				3218E10F21D76A6A00916728 /* 平行四辺形.png */,
+				3218E11321D76E1C00916728 /* 台形.png */,
+				3218E11521D7A7A400916728 /* ひし形.png */,
+				3218E11721D83C2700916728 /* 円.png */,
+				3218E11F21D885EB00916728 /* 扇形1.png */,
+				3218E12121DA02B900916728 /* 扇形2.png */,
+				3218E10921D7661000916728 /* 長方形.png */,
+				3218E12C21DB4A1100916728 /* 直方体表面積.png */,
+				3218E12B21DB4A1100916728 /* 立方体表面積.png */,
+				3218E12321DB49E500916728 /* 円錐表面積.png */,
+				3218E12421DB49E600916728 /* 円柱表面積.png */,
+				3218E12521DB49E600916728 /* 球体表面積.png */,
+				3218E12621DB49E600916728 /* 四角錐表面積.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		32181C3F2199807A009290A9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32181C0E21955446009290A9 /* ElementaryTableViewController.swift */,
+				32181C1A21957EC8009290A9 /* ElementaryNextTableViewController.swift */,
+				3218E10721D7493600916728 /* OneValueViewController.swift */,
+				32181C43219983ED009290A9 /* TwoValueViewController.swift */,
+				3218E11D21D866C800916728 /* ThreeValueViewController.swift */,
+				32181C1021955463009290A9 /* MiddleTableViewController.swift */,
+				32181C122195547A009290A9 /* HighTableViewController.swift */,
+				32B3AE9A21940F2700C14C20 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		32181C4021998084009290A9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				32B3AE9C21940F2700C14C20 /* Main.storyboard */,
+				32181C1421955497009290A9 /* ElementaryTableVC.storyboard */,
+				32181C1E21957F13009290A9 /* ElementaryNextTableVC.storyboard */,
+				3218E10521D7490000916728 /* OneValueVC.storyboard */,
+				32181C3A21997C55009290A9 /* TwoValueVC.storyboard */,
+				3218E11B21D866A300916728 /* ThreeValueVC.storyboard */,
+				32181C16219554A9009290A9 /* MiddleTableVC.storyboard */,
+				32181C18219554BF009290A9 /* HighTableVC.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3218E10421D5CA4500916728 /* Elementary */ = {
+			isa = PBXGroup;
+			children = (
+				3239038A21B0EC0100E518EE /* ElementaryModel.swift */,
+				3239038C21B0ECBA00E518EE /* FourListModel.swift */,
+				3239038E21B0EDCD00E518EE /* AreaListModel.swift */,
+				3239039021B0EDE600E518EE /* VolumeListModel.swift */,
+				3239039221B0EDFA00E518EE /* CircleListModel.swift */,
+				3239039421B0EE0F00E518EE /* SpeedListModel.swift */,
+				3239039621B0EE3800E518EE /* AverageListModel.swift */,
+				3239039821B0EE4E00E518EE /* RateListModel.swift */,
+				3239039A21B0EE6300E518EE /* ConcentrationListModel.swift */,
+			);
+			path = Elementary;
+			sourceTree = "<group>";
+		};
+		3239038121B0D88700E518EE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3239038621B0DE6600E518EE /* CalculationModel.swift */,
+				3239038821B0EB3F00E518EE /* CellModel.swift */,
+				3218E10421D5CA4500916728 /* Elementary */,
+			);
+			name = model;
+			path = Calculation/model;
+			sourceTree = SOURCE_ROOT;
+		};
+		32B3AE8C21940F2700C14C20 = {
+			isa = PBXGroup;
+			children = (
+				32B3AE9721940F2700C14C20 /* Calculation */,
+				32B3AEAC21940F2900C14C20 /* CalculationTests */,
+				32B3AEB721940F2900C14C20 /* CalculationUITests */,
+				32B3AE9621940F2700C14C20 /* Products */,
+				32181C3C21998011009290A9 /* image */,
+			);
+			sourceTree = "<group>";
+		};
+		32B3AE9621940F2700C14C20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B3AE9521940F2700C14C20 /* Calculation.app */,
+				32B3AEA921940F2900C14C20 /* CalculationTests.xctest */,
+				32B3AEB421940F2900C14C20 /* CalculationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32B3AE9721940F2700C14C20 /* Calculation */ = {
+			isa = PBXGroup;
+			children = (
+				32B3AE9821940F2700C14C20 /* AppDelegate.swift */,
+				32181C3F2199807A009290A9 /* ViewController */,
+				32181C4021998084009290A9 /* Storyboard */,
+				3239038121B0D88700E518EE /* model */,
+				32B3AE9F21940F2900C14C20 /* Assets.xcassets */,
+				32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */,
+				32B3AEA421940F2900C14C20 /* Info.plist */,
+			);
+			path = Calculation;
+			sourceTree = "<group>";
+		};
+		32B3AEAC21940F2900C14C20 /* CalculationTests */ = {
+			isa = PBXGroup;
+			children = (
+				32B3AEAD21940F2900C14C20 /* CalculationTests.swift */,
+				32B3AEAF21940F2900C14C20 /* Info.plist */,
+			);
+			path = CalculationTests;
+			sourceTree = "<group>";
+		};
+		32B3AEB721940F2900C14C20 /* CalculationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32B3AEB821940F2900C14C20 /* CalculationUITests.swift */,
+				32B3AEBA21940F2900C14C20 /* Info.plist */,
+			);
+			path = CalculationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32B3AE9421940F2700C14C20 /* Calculation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B3AEBD21940F2900C14C20 /* Build configuration list for PBXNativeTarget "Calculation" */;
+			buildPhases = (
+				32B3AE9121940F2700C14C20 /* Sources */,
+				32B3AE9221940F2700C14C20 /* Frameworks */,
+				32B3AE9321940F2700C14C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calculation;
+			productName = Calculation;
+			productReference = 32B3AE9521940F2700C14C20 /* Calculation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32B3AEA821940F2900C14C20 /* CalculationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B3AEC021940F2900C14C20 /* Build configuration list for PBXNativeTarget "CalculationTests" */;
+			buildPhases = (
+				32B3AEA521940F2900C14C20 /* Sources */,
+				32B3AEA621940F2900C14C20 /* Frameworks */,
+				32B3AEA721940F2900C14C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32B3AEAB21940F2900C14C20 /* PBXTargetDependency */,
+			);
+			name = CalculationTests;
+			productName = CalculationTests;
+			productReference = 32B3AEA921940F2900C14C20 /* CalculationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32B3AEB321940F2900C14C20 /* CalculationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B3AEC321940F2900C14C20 /* Build configuration list for PBXNativeTarget "CalculationUITests" */;
+			buildPhases = (
+				32B3AEB021940F2900C14C20 /* Sources */,
+				32B3AEB121940F2900C14C20 /* Frameworks */,
+				32B3AEB221940F2900C14C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32B3AEB621940F2900C14C20 /* PBXTargetDependency */,
+			);
+			name = CalculationUITests;
+			productName = CalculationUITests;
+			productReference = 32B3AEB421940F2900C14C20 /* CalculationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32B3AE8D21940F2700C14C20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "陸　前田";
+				TargetAttributes = {
+					32B3AE9421940F2700C14C20 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					32B3AEA821940F2900C14C20 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 32B3AE9421940F2700C14C20;
+					};
+					32B3AEB321940F2900C14C20 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 32B3AE9421940F2700C14C20;
+					};
+				};
+			};
+			buildConfigurationList = 32B3AE9021940F2700C14C20 /* Build configuration list for PBXProject "Calculation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32B3AE8C21940F2700C14C20;
+			productRefGroup = 32B3AE9621940F2700C14C20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32B3AE9421940F2700C14C20 /* Calculation */,
+				32B3AEA821940F2900C14C20 /* CalculationTests */,
+				32B3AEB321940F2900C14C20 /* CalculationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32B3AE9321940F2700C14C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3218E11421D76E1C00916728 /* 台形.png in Resources */,
+				3239038021B0D2AA00E518EE /* 累乗.png in Resources */,
+				325EC29221AFCA07002C2312 /* 加算.png in Resources */,
+				3218E11021D76A6A00916728 /* 平行四辺形.png in Resources */,
+				3218E11221D76BE700916728 /* 三角形.png in Resources */,
+				3218E12721DB49E600916728 /* 円錐表面積.png in Resources */,
+				325EC29121AFCA07002C2312 /* 除算.png in Resources */,
+				3218E12D21DB4A1100916728 /* 立方体表面積.png in Resources */,
+				32181C17219554A9009290A9 /* MiddleTableVC.storyboard in Resources */,
+				3218E12821DB49E600916728 /* 円柱表面積.png in Resources */,
+				32181C3B21997C55009290A9 /* TwoValueVC.storyboard in Resources */,
+				32181C1F21957F13009290A9 /* ElementaryNextTableVC.storyboard in Resources */,
+				325EC29321AFCA07002C2312 /* 減算.png in Resources */,
+				3218E11C21D866A300916728 /* ThreeValueVC.storyboard in Resources */,
+				3218E12021D885EB00916728 /* 扇形1.png in Resources */,
+				32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */,
+				3239038521B0DB6500E518EE /* 正方形.png in Resources */,
+				3218E11821D83C2700916728 /* 円.png in Resources */,
+				3218E12A21DB49E600916728 /* 四角錐表面積.png in Resources */,
+				32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */,
+				325EC29421AFCA07002C2312 /* 乗算.png in Resources */,
+				3218E12921DB49E600916728 /* 球体表面積.png in Resources */,
+				3218E12E21DB4A1100916728 /* 直方体表面積.png in Resources */,
+				3218E10621D7490000916728 /* OneValueVC.storyboard in Resources */,
+				3218E10A21D7661000916728 /* 長方形.png in Resources */,
+				32181C1521955497009290A9 /* ElementaryTableVC.storyboard in Resources */,
+				3218E11621D7A7A400916728 /* ひし形.png in Resources */,
+				3218E12221DA02B900916728 /* 扇形2.png in Resources */,
+				32181C19219554BF009290A9 /* HighTableVC.storyboard in Resources */,
+				32B3AE9E21940F2700C14C20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B3AEA721940F2900C14C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B3AEB221940F2900C14C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32B3AE9121940F2700C14C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32181C1B21957EC8009290A9 /* ElementaryNextTableViewController.swift in Sources */,
+				3239038721B0DE6600E518EE /* CalculationModel.swift in Sources */,
+				32181C1121955463009290A9 /* MiddleTableViewController.swift in Sources */,
+				32181C132195547A009290A9 /* HighTableViewController.swift in Sources */,
+				3239039521B0EE0F00E518EE /* SpeedListModel.swift in Sources */,
+				32181C0F21955446009290A9 /* ElementaryTableViewController.swift in Sources */,
+				3218E10821D7493600916728 /* OneValueViewController.swift in Sources */,
+				3239038921B0EB3F00E518EE /* CellModel.swift in Sources */,
+				3239039121B0EDE600E518EE /* VolumeListModel.swift in Sources */,
+				3239039321B0EDFA00E518EE /* CircleListModel.swift in Sources */,
+				3239039B21B0EE6300E518EE /* ConcentrationListModel.swift in Sources */,
+				3239039721B0EE3800E518EE /* AverageListModel.swift in Sources */,
+				3239038D21B0ECBA00E518EE /* FourListModel.swift in Sources */,
+				32B3AE9B21940F2700C14C20 /* ViewController.swift in Sources */,
+				3239038F21B0EDCD00E518EE /* AreaListModel.swift in Sources */,
+				3239038B21B0EC0100E518EE /* ElementaryModel.swift in Sources */,
+				32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */,
+				3218E11E21D866C800916728 /* ThreeValueViewController.swift in Sources */,
+				3239039921B0EE4E00E518EE /* RateListModel.swift in Sources */,
+				32181C44219983ED009290A9 /* TwoValueViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B3AEA521940F2900C14C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B3AEAE21940F2900C14C20 /* CalculationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B3AEB021940F2900C14C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B3AEB921940F2900C14C20 /* CalculationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32B3AEAB21940F2900C14C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32B3AE9421940F2700C14C20 /* Calculation */;
+			targetProxy = 32B3AEAA21940F2900C14C20 /* PBXContainerItemProxy */;
+		};
+		32B3AEB621940F2900C14C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32B3AE9421940F2700C14C20 /* Calculation */;
+			targetProxy = 32B3AEB521940F2900C14C20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32B3AE9C21940F2700C14C20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32B3AE9D21940F2700C14C20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32B3AEA221940F2900C14C20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32B3AEBB21940F2900C14C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32B3AEBC21940F2900C14C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32B3AEBE21940F2900C14C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FVAM472SV;
+				INFOPLIST_FILE = Calculation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lb8.Calculation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32B3AEBF21940F2900C14C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FVAM472SV;
+				INFOPLIST_FILE = Calculation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lb8.Calculation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32B3AEC121940F2900C14C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FVAM472SV;
+				INFOPLIST_FILE = CalculationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lb8.CalculationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculation.app/Calculation";
+			};
+			name = Debug;
+		};
+		32B3AEC221940F2900C14C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FVAM472SV;
+				INFOPLIST_FILE = CalculationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lb8.CalculationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculation.app/Calculation";
+			};
+			name = Release;
+		};
+		32B3AEC421940F2900C14C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FVAM472SV;
+				INFOPLIST_FILE = CalculationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lb8.CalculationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calculation;
+			};
+			name = Debug;
+		};
+		32B3AEC521940F2900C14C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FVAM472SV;
+				INFOPLIST_FILE = CalculationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lb8.CalculationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calculation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32B3AE9021940F2700C14C20 /* Build configuration list for PBXProject "Calculation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B3AEBB21940F2900C14C20 /* Debug */,
+				32B3AEBC21940F2900C14C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B3AEBD21940F2900C14C20 /* Build configuration list for PBXNativeTarget "Calculation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B3AEBE21940F2900C14C20 /* Debug */,
+				32B3AEBF21940F2900C14C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B3AEC021940F2900C14C20 /* Build configuration list for PBXNativeTarget "CalculationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B3AEC121940F2900C14C20 /* Debug */,
+				32B3AEC221940F2900C14C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B3AEC321940F2900C14C20 /* Build configuration list for PBXNativeTarget "CalculationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B3AEC421940F2900C14C20 /* Debug */,
+				32B3AEC521940F2900C14C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32B3AE8D21940F2700C14C20 /* Project object */;
+}
