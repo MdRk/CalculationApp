@@ -81,4 +81,9 @@ class CalculationModel: NSObject {
         return 2.0 * ((value1*value2) + (value2*value3) + (value3*value1))
     }
     
+    //円柱の表面積
+    func areaCylinder(value1: Double, value2: Double) -> Double{
+        return (2.0*3.14*value1*value1) + (2.0*3.14*value1*value2)
+    }
+    
 }
