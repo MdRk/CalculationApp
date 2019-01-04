@@ -101,4 +101,33 @@ class CalculationModel: NSObject {
         return 4.0 * 3.14 * (value1*value1)
     }
     
+    //立方体の体積
+    func volumeCube(value1: Double) -> Double{
+        return value1 * value1 * value1
+    }
+    
+    //直方体の体積
+    func volumeCuboid(value1: Double, value2: Double, value3: Double) -> Double{
+        return value1 * value2 * value3
+    }
+    
+    //円柱の体積
+    func volumeCylinder(value1: Double, value2: Double) -> Double{
+        return 3.14 * (value1 * value1) * value2
+    }
+    
+    //四角錐の体積
+    func volumeSquarePyramid(value1: Double, value2: Double) -> Double{
+        return (value1 * value2) / 3
+    }
+    
+    //円錐の体積
+    func volumeCone(value1: Double, value2: Double) -> Double{
+        return (3.14 * (value1 * value1) * value2) / 3
+    }
+    
+    //球体の体積
+    func volumeSphere(value1: Double) -> Double{
+        return (3.14 * (value1 * value1 * value1)) * 4 / 3
+    }
 }

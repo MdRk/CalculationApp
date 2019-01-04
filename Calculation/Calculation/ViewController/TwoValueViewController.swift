@@ -18,6 +18,7 @@ class TwoValueViewController: UIViewController {
     @IBOutlet weak var value1Label: UILabel!
     @IBOutlet weak var value2Label: UILabel!
     
+    var parentCell: String = ""
     var selectedCell: String = ""
     
     var calculation = CalculationModel()
@@ -84,14 +85,31 @@ class TwoValueViewController: UIViewController {
             value2Label.text = "半径"
             break
         case "円柱":
-            officialImageView.image = UIImage(named: "円柱表面積")
-            value1Label.text = "半径"
-            value2Label.text = "高さ"
+            if parentCell == "面積" {
+                officialImageView.image = UIImage(named: "円柱表面積")
+                value1Label.text = "半径"
+                value2Label.text = "高さ"
+            } else {
+                officialImageView.image = UIImage(named: "円柱体積")
+                value1Label.text = "r"
+                value2Label.text = "h"
+            }
+            break
+        case "四角錐":
+            officialImageView.image = UIImage(named: "四角錐体積")
+            value1Label.text = "弧"
+            value2Label.text = "半径"
             break
         case "円錐":
-            officialImageView.image = UIImage(named: "円錐表面積")
-            value1Label.text = "半径"
-            value2Label.text = "母線"
+            if parentCell == "面積" {
+                officialImageView.image = UIImage(named: "円錐表面積")
+                value1Label.text = "S"
+                value2Label.text = "h"
+            } else {
+                officialImageView.image = UIImage(named: "円錐体積")
+                value1Label.text = "r"
+                value2Label.text = "h"
+            }
             break
         default:
             break
@@ -150,12 +168,26 @@ class TwoValueViewController: UIViewController {
             answerLabel.text = String(format: "%0.2f", answer)
             break
         case "円柱":
-            answer = calculation.areaCylinder(value1: value1, value2: value2)
+            if parentCell == "面積" {
+                answer = calculation.areaCylinder(value1: value1, value2: value2)
+                answerLabel.text = String(format: "%0.2f", answer)
+            } else {
+                answer = calculation.volumeCylinder(value1: value1, value2: value2)
+                answerLabel.text = String(format: "%0.2f", answer)
+            }
+            break
+        case "四角錐":
+            answer = calculation.volumeSquarePyramid(value1: value1, value2: value2)
             answerLabel.text = String(format: "%0.2f", answer)
             break
         case "円錐":
-            answer = calculation.areaCone(value1: value1, value2: value2)
-            answerLabel.text = String(format: "%0.2f", answer)
+            if parentCell == "面積" {
+                answer = calculation.areaCone(value1: value1, value2: value2)
+                answerLabel.text = String(format: "%0.2f", answer)
+            } else {
+                answer = calculation.volumeCone(value1: value1, value2: value2)
+                answerLabel.text = String(format: "%0.2f", answer)
+            }
             break
         default:
             break

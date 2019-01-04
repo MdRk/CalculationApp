@@ -105,6 +105,17 @@ class ElementaryNextTableViewController: UITableViewController {
                 performSegue(withIdentifier: "toTwoValue", sender: nil)
             }
             break
+        case "体積":
+            self.childCell = selectedList.volumeList[indexPath.row]
+            
+            if (self.childCell == "立方体") || (self.childCell == "球体"){
+                performSegue(withIdentifier: "toOneValue", sender: nil)
+            } else if (self.childCell == "直方体"){
+                performSegue(withIdentifier: "toThreeValue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "toTwoValue", sender: nil)
+            }
+            break
         default:
             break
         }
@@ -116,14 +127,17 @@ class ElementaryNextTableViewController: UITableViewController {
         if (segue.identifier == "toTwoValue") {
             let nextVC: TwoValueViewController = (segue.destination as? TwoValueViewController)!
             
+            nextVC.parentCell = self.selectedCell
             nextVC.selectedCell = self.childCell
         } else if (segue.identifier == "toOneValue") {
             let nextVC: OneValueViewController = (segue.destination as? OneValueViewController)!
             
+            nextVC.parentCell = self.selectedCell
             nextVC.selectedCell = self.childCell
         } else if (segue.identifier == "toThreeValue") {
             let nextVC: ThreeValueViewController = (segue.destination as? ThreeValueViewController)!
             
+            nextVC.parentCell = self.selectedCell
             nextVC.selectedCell = self.childCell
         }
     }
