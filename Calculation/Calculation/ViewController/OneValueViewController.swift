@@ -46,8 +46,13 @@ class OneValueViewController: UIViewController {
             }
             break
         case "球体":
-            officialImageView.image = UIImage(named: "球体表面積")
-            value1Label.text = "半径"
+            if parentCell == "面積" {
+                officialImageView.image = UIImage(named: "球体表面積")
+                value1Label.text = "半径"
+            } else {
+                officialImageView.image = UIImage(named: "球体体積")
+                value1Label.text = "半径"
+            }
             break
         default:
             break
