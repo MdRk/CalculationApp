@@ -105,6 +105,17 @@ class ElementaryNextTableViewController: UITableViewController {
                 performSegue(withIdentifier: "toTwoValue", sender: nil)
             }
             break
+        case "体積":
+            self.childCell = selectedList.areaList[indexPath.row]
+            
+            if (self.childCell == "立方体") {
+                performSegue(withIdentifier: "toOneValue", sender: nil)
+            } else if (self.childCell == "直方体"){
+                performSegue(withIdentifier: "toThreeValue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "toTwoValue", sender: nil)
+            }
+            break
         default:
             break
         }
