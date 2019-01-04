@@ -35,6 +35,12 @@
 		3218E12A21DB49E600916728 /* 四角錐表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12621DB49E600916728 /* 四角錐表面積.png */; };
 		3218E12D21DB4A1100916728 /* 立方体表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12B21DB4A1100916728 /* 立方体表面積.png */; };
 		3218E12E21DB4A1100916728 /* 直方体表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12C21DB4A1100916728 /* 直方体表面積.png */; };
+		3218E13321DF5EB200916728 /* 円柱体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12F21DF5EB000916728 /* 円柱体積.png */; };
+		3218E13421DF5EB200916728 /* 円錐体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13021DF5EB000916728 /* 円錐体積.png */; };
+		3218E13521DF5EB200916728 /* 球体体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13121DF5EB100916728 /* 球体体積.png */; };
+		3218E13621DF5EB200916728 /* 四角錐体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13221DF5EB100916728 /* 四角錐体積.png */; };
+		3218E13921DF5ED400916728 /* 直方体体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13721DF5ED300916728 /* 直方体体積.png */; };
+		3218E13A21DF5ED400916728 /* 立方体体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13821DF5ED400916728 /* 立方体体積.png */; };
 		3239038021B0D2AA00E518EE /* 累乗.png in Resources */ = {isa = PBXBuildFile; fileRef = 3239037F21B0D2AA00E518EE /* 累乗.png */; };
 		3239038521B0DB6500E518EE /* 正方形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3239038421B0DB6500E518EE /* 正方形.png */; };
 		3239038721B0DE6600E518EE /* CalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038621B0DE6600E518EE /* CalculationModel.swift */; };
@@ -107,6 +113,12 @@
 		3218E12621DB49E600916728 /* 四角錐表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "四角錐表面積.png"; sourceTree = "<group>"; };
 		3218E12B21DB4A1100916728 /* 立方体表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立方体表面積.png"; sourceTree = "<group>"; };
 		3218E12C21DB4A1100916728 /* 直方体表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "直方体表面積.png"; sourceTree = "<group>"; };
+		3218E12F21DF5EB000916728 /* 円柱体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円柱体積.png"; sourceTree = "<group>"; };
+		3218E13021DF5EB000916728 /* 円錐体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円錐体積.png"; sourceTree = "<group>"; };
+		3218E13121DF5EB100916728 /* 球体体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "球体体積.png"; sourceTree = "<group>"; };
+		3218E13221DF5EB100916728 /* 四角錐体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "四角錐体積.png"; sourceTree = "<group>"; };
+		3218E13721DF5ED300916728 /* 直方体体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "直方体体積.png"; sourceTree = "<group>"; };
+		3218E13821DF5ED400916728 /* 立方体体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立方体体積.png"; sourceTree = "<group>"; };
 		3239037F21B0D2AA00E518EE /* 累乗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "累乗.png"; sourceTree = "<group>"; };
 		3239038421B0DB6500E518EE /* 正方形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "正方形.png"; sourceTree = "<group>"; };
 		3239038621B0DE6600E518EE /* CalculationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModel.swift; sourceTree = "<group>"; };
@@ -187,6 +199,12 @@
 				3218E12421DB49E600916728 /* 円柱表面積.png */,
 				3218E12521DB49E600916728 /* 球体表面積.png */,
 				3218E12621DB49E600916728 /* 四角錐表面積.png */,
+				3218E13721DF5ED300916728 /* 直方体体積.png */,
+				3218E13821DF5ED400916728 /* 立方体体積.png */,
+				3218E13021DF5EB000916728 /* 円錐体積.png */,
+				3218E12F21DF5EB000916728 /* 円柱体積.png */,
+				3218E13121DF5EB100916728 /* 球体体積.png */,
+				3218E13221DF5EB100916728 /* 四角錐体積.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -408,6 +426,7 @@
 				3218E11421D76E1C00916728 /* 台形.png in Resources */,
 				3239038021B0D2AA00E518EE /* 累乗.png in Resources */,
 				325EC29221AFCA07002C2312 /* 加算.png in Resources */,
+				3218E13A21DF5ED400916728 /* 立方体体積.png in Resources */,
 				3218E11021D76A6A00916728 /* 平行四辺形.png in Resources */,
 				3218E11221D76BE700916728 /* 三角形.png in Resources */,
 				3218E12721DB49E600916728 /* 円錐表面積.png in Resources */,
@@ -416,12 +435,14 @@
 				32181C17219554A9009290A9 /* MiddleTableVC.storyboard in Resources */,
 				3218E12821DB49E600916728 /* 円柱表面積.png in Resources */,
 				32181C3B21997C55009290A9 /* TwoValueVC.storyboard in Resources */,
+				3218E13921DF5ED400916728 /* 直方体体積.png in Resources */,
 				32181C1F21957F13009290A9 /* ElementaryNextTableVC.storyboard in Resources */,
 				325EC29321AFCA07002C2312 /* 減算.png in Resources */,
 				3218E11C21D866A300916728 /* ThreeValueVC.storyboard in Resources */,
 				3218E12021D885EB00916728 /* 扇形1.png in Resources */,
 				32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */,
 				3239038521B0DB6500E518EE /* 正方形.png in Resources */,
+				3218E13421DF5EB200916728 /* 円錐体積.png in Resources */,
 				3218E11821D83C2700916728 /* 円.png in Resources */,
 				3218E12A21DB49E600916728 /* 四角錐表面積.png in Resources */,
 				32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */,
@@ -429,6 +450,9 @@
 				3218E12921DB49E600916728 /* 球体表面積.png in Resources */,
 				3218E12E21DB4A1100916728 /* 直方体表面積.png in Resources */,
 				3218E10621D7490000916728 /* OneValueVC.storyboard in Resources */,
+				3218E13621DF5EB200916728 /* 四角錐体積.png in Resources */,
+				3218E13521DF5EB200916728 /* 球体体積.png in Resources */,
+				3218E13321DF5EB200916728 /* 円柱体積.png in Resources */,
 				3218E10A21D7661000916728 /* 長方形.png in Resources */,
 				32181C1521955497009290A9 /* ElementaryTableVC.storyboard in Resources */,
 				3218E11621D7A7A400916728 /* ひし形.png in Resources */,
