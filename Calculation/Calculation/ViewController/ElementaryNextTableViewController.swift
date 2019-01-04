@@ -97,9 +97,9 @@ class ElementaryNextTableViewController: UITableViewController {
         case "面積":
             self.childCell = selectedList.areaList[indexPath.row]
             
-            if self.childCell == "円" {
+            if (self.childCell == "円") || (self.childCell == "立方体") || (self.childCell == "球体") {
                 performSegue(withIdentifier: "toOneValue", sender: nil)
-            } else if self.childCell == "台形"{
+            } else if (self.childCell == "台形") || (self.childCell == "直方体") || (self.childCell == "四角錐") {
                 performSegue(withIdentifier: "toThreeValue", sender: nil)
             } else {
                 performSegue(withIdentifier: "toTwoValue", sender: nil)
