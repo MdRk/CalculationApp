@@ -106,7 +106,7 @@ class ElementaryNextTableViewController: UITableViewController {
             }
             break
         case "体積":
-            self.childCell = selectedList.areaList[indexPath.row]
+            self.childCell = selectedList.volumeList[indexPath.row]
             
             if (self.childCell == "立方体") {
                 performSegue(withIdentifier: "toOneValue", sender: nil)
@@ -127,14 +127,17 @@ class ElementaryNextTableViewController: UITableViewController {
         if (segue.identifier == "toTwoValue") {
             let nextVC: TwoValueViewController = (segue.destination as? TwoValueViewController)!
             
+            nextVC.parentCell = self.selectedCell
             nextVC.selectedCell = self.childCell
         } else if (segue.identifier == "toOneValue") {
             let nextVC: OneValueViewController = (segue.destination as? OneValueViewController)!
             
+            nextVC.parentCell = self.selectedCell
             nextVC.selectedCell = self.childCell
         } else if (segue.identifier == "toThreeValue") {
             let nextVC: ThreeValueViewController = (segue.destination as? ThreeValueViewController)!
             
+            nextVC.parentCell = self.selectedCell
             nextVC.selectedCell = self.childCell
         }
     }

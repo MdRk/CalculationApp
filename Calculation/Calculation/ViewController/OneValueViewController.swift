@@ -10,6 +10,7 @@ import UIKit
 
 class OneValueViewController: UIViewController {
 
+    var parentCell: String = ""
     var selectedCell: String = ""
     
     var calculation = CalculationModel()
@@ -36,8 +37,13 @@ class OneValueViewController: UIViewController {
             value1Label.text = "半径"
             break
         case "立方体":
-            officialImageView.image = UIImage(named: "立方体表面積")
-            value1Label.text = "a"
+            if parentCell == "面積" {
+                officialImageView.image = UIImage(named: "立方体表面積")
+                value1Label.text = "a"
+            } else {
+                officialImageView.image = UIImage(named: "立方体体積")
+                value1Label.text = "a"
+            }
             break
         case "球体":
             officialImageView.image = UIImage(named: "球体表面積")
@@ -57,8 +63,13 @@ class OneValueViewController: UIViewController {
             answerLabel.text = String(format: "%0.2f", answer)
             break
         case "立方体":
-            answer = calculation.areaCube(value1: value1)
-            answerLabel.text = String(format: "%0.2f", answer)
+            if parentCell == "面積"{
+                answer = calculation.areaCube(value1: value1)
+                answerLabel.text = String(format: "%0.2f", answer)
+            } else {
+                answer = calculation.volumeCube(value1: value1)
+                answerLabel.text = String(format: "%0.2f", answer)
+            }
             break
         case "球体":
             answer = calculation.areaSphere(value1: value1)

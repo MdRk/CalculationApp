@@ -19,6 +19,7 @@ class ThreeValueViewController: UIViewController {
     @IBOutlet weak var value3Label: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
     
+    var parentCell: String = ""
     var selectedCell: String = ""
     
     var calculation = CalculationModel()

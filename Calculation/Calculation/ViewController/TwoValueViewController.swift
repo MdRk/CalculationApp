@@ -18,6 +18,7 @@ class TwoValueViewController: UIViewController {
     @IBOutlet weak var value1Label: UILabel!
     @IBOutlet weak var value2Label: UILabel!
     
+    var parentCell: String = ""
     var selectedCell: String = ""
     
     var calculation = CalculationModel()
