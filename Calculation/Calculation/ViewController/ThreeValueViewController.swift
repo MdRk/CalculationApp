@@ -45,10 +45,17 @@ class ThreeValueViewController: UIViewController {
             value3Label.text = "高さ"
             break
         case "直方体":
-            officialImageView.image = UIImage(named: "直方体表面積")
-            value1Label.text = "a"
-            value2Label.text = "b"
-            value3Label.text = "c"
+            if parentCell == "面積" {
+                officialImageView.image = UIImage(named: "直方体表面積")
+                value1Label.text = "a"
+                value2Label.text = "b"
+                value3Label.text = "c"
+            } else {
+                officialImageView.image = UIImage(named: "直方体体積")
+                value1Label.text = "a"
+                value2Label.text = "b"
+                value3Label.text = "h"
+            }
             break
         case "四角錐":
             officialImageView.image = UIImage(named: "四角錐表面積")
@@ -70,8 +77,13 @@ class ThreeValueViewController: UIViewController {
             answerLabel.text = String(format: "%0.2f", answer)
             break
         case "直方体":
-            answer = calculation.areaCuboid(value1: value1, value2: value2, value3: value3)
-            answerLabel.text = String(format: "%0.2f", answer)
+            if parentCell == "面積" {
+                answer = calculation.areaCuboid(value1: value1, value2: value2, value3: value3)
+                answerLabel.text = String(format: "%0.2f", answer)
+            } else {
+                answer = calculation.volumeCuboid(value1: value1, value2: value2, value3: value3)
+                answerLabel.text = String(format: "%0.2f", answer)
+            }
             break
         case "四角錐":
             answer = calculation.areaSquarePyramid(value1: value1, value2: value2, value3: value3)

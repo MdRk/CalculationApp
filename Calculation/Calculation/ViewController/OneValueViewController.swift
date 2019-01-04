@@ -72,8 +72,13 @@ class OneValueViewController: UIViewController {
             }
             break
         case "球体":
-            answer = calculation.areaSphere(value1: value1)
-            answerLabel.text = String(format: "%0.2f", answer)
+            if parentCell == "面積" {
+                answer = calculation.areaSphere(value1: value1)
+                answerLabel.text = String(format: "%0.2f", answer)
+            } else {
+                answer = calculation.volumeSphere(value1: value1)
+                answerLabel.text = String(format: "%0.2f", answer)
+            }
             break
         default:
             break

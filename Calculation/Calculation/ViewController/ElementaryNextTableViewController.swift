@@ -108,7 +108,7 @@ class ElementaryNextTableViewController: UITableViewController {
         case "体積":
             self.childCell = selectedList.volumeList[indexPath.row]
             
-            if (self.childCell == "立方体") {
+            if (self.childCell == "立方体") || (self.childCell == "球体"){
                 performSegue(withIdentifier: "toOneValue", sender: nil)
             } else if (self.childCell == "直方体"){
                 performSegue(withIdentifier: "toThreeValue", sender: nil)
