@@ -111,6 +111,11 @@ class TwoValueViewController: UIViewController {
                 value2Label.text = "h"
             }
             break
+        case "扇形の弧":
+            officialImageView.image = UIImage(named: "扇形の弧")
+            value1Label.text = "r"
+            value2Label.text = "x"
+            break
         default:
             break
         }
@@ -188,6 +193,10 @@ class TwoValueViewController: UIViewController {
                 answer = calculation.volumeCone(value1: value1, value2: value2)
                 answerLabel.text = String(format: "%0.2f", answer)
             }
+            break
+        case "扇形の弧":
+            answer = calculation.fanArc(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
             break
         default:
             break

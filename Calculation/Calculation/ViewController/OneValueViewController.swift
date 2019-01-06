@@ -54,6 +54,10 @@ class OneValueViewController: UIViewController {
                 value1Label.text = "半径"
             }
             break
+        case "円周":
+            officialImageView.image = UIImage(named: "円周")
+            value1Label.text = "r"
+            break
         default:
             break
         }
@@ -84,6 +88,10 @@ class OneValueViewController: UIViewController {
                 answer = calculation.volumeSphere(value1: value1)
                 answerLabel.text = String(format: "%0.2f", answer)
             }
+            break
+        case "円周":
+            answer = calculation.circumference(value1: value1)
+            answerLabel.text = String(format: "%0.2f", answer)
             break
         default:
             break

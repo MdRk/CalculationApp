@@ -116,6 +116,15 @@ class ElementaryNextTableViewController: UITableViewController {
                 performSegue(withIdentifier: "toTwoValue", sender: nil)
             }
             break
+        case "円":
+            self.childCell = selectedList.circleList[indexPath.row]
+            
+            if (self.childCell == "円周") {
+                performSegue(withIdentifier: "toOneValue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "toTwoValue", sender: nil)
+            }
+            break
         default:
             break
         }
