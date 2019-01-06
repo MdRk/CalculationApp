@@ -41,6 +41,8 @@
 		3218E13621DF5EB200916728 /* 四角錐体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13221DF5EB100916728 /* 四角錐体積.png */; };
 		3218E13921DF5ED400916728 /* 直方体体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13721DF5ED300916728 /* 直方体体積.png */; };
 		3218E13A21DF5ED400916728 /* 立方体体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13821DF5ED400916728 /* 立方体体積.png */; };
+		322CFD3021E1E7A9007145C5 /* 扇形の弧.png in Resources */ = {isa = PBXBuildFile; fileRef = 322CFD2E21E1E7A9007145C5 /* 扇形の弧.png */; };
+		322CFD3121E1E7A9007145C5 /* 円周.png in Resources */ = {isa = PBXBuildFile; fileRef = 322CFD2F21E1E7A9007145C5 /* 円周.png */; };
 		3239038021B0D2AA00E518EE /* 累乗.png in Resources */ = {isa = PBXBuildFile; fileRef = 3239037F21B0D2AA00E518EE /* 累乗.png */; };
 		3239038521B0DB6500E518EE /* 正方形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3239038421B0DB6500E518EE /* 正方形.png */; };
 		3239038721B0DE6600E518EE /* CalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038621B0DE6600E518EE /* CalculationModel.swift */; };
@@ -119,6 +121,8 @@
 		3218E13221DF5EB100916728 /* 四角錐体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "四角錐体積.png"; sourceTree = "<group>"; };
 		3218E13721DF5ED300916728 /* 直方体体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "直方体体積.png"; sourceTree = "<group>"; };
 		3218E13821DF5ED400916728 /* 立方体体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立方体体積.png"; sourceTree = "<group>"; };
+		322CFD2E21E1E7A9007145C5 /* 扇形の弧.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扇形の弧.png"; sourceTree = "<group>"; };
+		322CFD2F21E1E7A9007145C5 /* 円周.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円周.png"; sourceTree = "<group>"; };
 		3239037F21B0D2AA00E518EE /* 累乗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "累乗.png"; sourceTree = "<group>"; };
 		3239038421B0DB6500E518EE /* 正方形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "正方形.png"; sourceTree = "<group>"; };
 		3239038621B0DE6600E518EE /* CalculationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModel.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 		32181C3C21998011009290A9 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				322CFD2F21E1E7A9007145C5 /* 円周.png */,
+				322CFD2E21E1E7A9007145C5 /* 扇形の弧.png */,
 				325EC28E21AFCA07002C2312 /* 加算.png */,
 				325EC28F21AFCA07002C2312 /* 減算.png */,
 				325EC29021AFCA07002C2312 /* 乗算.png */,
@@ -436,6 +442,7 @@
 				3218E12821DB49E600916728 /* 円柱表面積.png in Resources */,
 				32181C3B21997C55009290A9 /* TwoValueVC.storyboard in Resources */,
 				3218E13921DF5ED400916728 /* 直方体体積.png in Resources */,
+				322CFD3121E1E7A9007145C5 /* 円周.png in Resources */,
 				32181C1F21957F13009290A9 /* ElementaryNextTableVC.storyboard in Resources */,
 				325EC29321AFCA07002C2312 /* 減算.png in Resources */,
 				3218E11C21D866A300916728 /* ThreeValueVC.storyboard in Resources */,
@@ -450,6 +457,7 @@
 				3218E12921DB49E600916728 /* 球体表面積.png in Resources */,
 				3218E12E21DB4A1100916728 /* 直方体表面積.png in Resources */,
 				3218E10621D7490000916728 /* OneValueVC.storyboard in Resources */,
+				322CFD3021E1E7A9007145C5 /* 扇形の弧.png in Resources */,
 				3218E13621DF5EB200916728 /* 四角錐体積.png in Resources */,
 				3218E13521DF5EB200916728 /* 球体体積.png in Resources */,
 				3218E13321DF5EB200916728 /* 円柱体積.png in Resources */,
