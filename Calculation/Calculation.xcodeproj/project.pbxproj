@@ -56,6 +56,7 @@
 		3239039721B0EE3800E518EE /* AverageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039621B0EE3800E518EE /* AverageListModel.swift */; };
 		3239039921B0EE4E00E518EE /* RateListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039821B0EE4E00E518EE /* RateListModel.swift */; };
 		3239039B21B0EE6300E518EE /* ConcentrationListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039A21B0EE6300E518EE /* ConcentrationListModel.swift */; };
+		324C571521E445D70068A242 /* CalculationModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C571421E445D70068A242 /* CalculationModelTest.swift */; };
 		325EC29121AFCA07002C2312 /* 除算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC28D21AFCA07002C2312 /* 除算.png */; };
 		325EC29221AFCA07002C2312 /* 加算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC28E21AFCA07002C2312 /* 加算.png */; };
 		325EC29321AFCA07002C2312 /* 減算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC28F21AFCA07002C2312 /* 減算.png */; };
@@ -136,6 +137,7 @@
 		3239039621B0EE3800E518EE /* AverageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageListModel.swift; sourceTree = "<group>"; };
 		3239039821B0EE4E00E518EE /* RateListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateListModel.swift; sourceTree = "<group>"; };
 		3239039A21B0EE6300E518EE /* ConcentrationListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationListModel.swift; sourceTree = "<group>"; };
+		324C571421E445D70068A242 /* CalculationModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModelTest.swift; sourceTree = "<group>"; };
 		325EC28D21AFCA07002C2312 /* 除算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "除算.png"; sourceTree = "<group>"; };
 		325EC28E21AFCA07002C2312 /* 加算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加算.png"; sourceTree = "<group>"; };
 		325EC28F21AFCA07002C2312 /* 減算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "減算.png"; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				32B3AEAD21940F2900C14C20 /* CalculationTests.swift */,
+				324C571421E445D70068A242 /* CalculationModelTest.swift */,
 				32B3AEAF21940F2900C14C20 /* Info.plist */,
 			);
 			path = CalculationTests;
@@ -519,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B3AEAE21940F2900C14C20 /* CalculationTests.swift in Sources */,
+				324C571521E445D70068A242 /* CalculationModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
