@@ -41,6 +41,11 @@ class CalculationModel: NSObject {
         return 2 * 3.14 * value1
     }
     
+    //分速、秒速
+    func minuteSecondSpeed(value1: Double) -> Double{
+        return value1 / 60
+    }
+    
 //引数2
     //加算
     func addition(value1: Double, value2: Double) -> Double{
