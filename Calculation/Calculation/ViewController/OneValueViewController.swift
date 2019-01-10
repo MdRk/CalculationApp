@@ -58,6 +58,14 @@ class OneValueViewController: UIViewController {
             officialImageView.image = UIImage(named: "円周")
             value1Label.text = "r"
             break
+        case "分速":
+            officialImageView.image = UIImage(named: "分速")
+            value1Label.text = "時速"
+            break
+        case "秒速":
+            officialImageView.image = UIImage(named: "秒速")
+            value1Label.text = "分速"
+            break
         default:
             break
         }
@@ -91,6 +99,14 @@ class OneValueViewController: UIViewController {
             break
         case "円周":
             answer = calculation.circumference(value1: value1)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "分速":
+            answer = calculation.minuteSecondSpeed(value1: value1)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "秒速":
+            answer = calculation.minuteSecondSpeed(value1: value1)
             answerLabel.text = String(format: "%0.2f", answer)
             break
         default:

@@ -116,6 +116,21 @@ class TwoValueViewController: UIViewController {
             value1Label.text = "r"
             value2Label.text = "x"
             break
+        case "速さ":
+            officialImageView.image = UIImage(named: "速さ")
+            value1Label.text = "距離"
+            value2Label.text = "時間"
+            break
+        case "距離":
+            officialImageView.image = UIImage(named: "距離")
+            value1Label.text = "速さ"
+            value2Label.text = "時間"
+            break
+        case "時間":
+            officialImageView.image = UIImage(named: "時間")
+            value1Label.text = "距離"
+            value2Label.text = "速さ"
+            break
         default:
             break
         }
@@ -196,6 +211,18 @@ class TwoValueViewController: UIViewController {
             break
         case "扇形の弧":
             answer = calculation.fanArc(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "速さ":
+            answer = calculation.division(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "距離":
+            answer = calculation.multiplication(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.0f", answer)
+            break
+        case "時間":
+            answer = calculation.division(value1: value1, value2: value2)
             answerLabel.text = String(format: "%0.2f", answer)
             break
         default:
