@@ -134,6 +134,29 @@ class ElementaryNextTableViewController: UITableViewController {
                 performSegue(withIdentifier: "toTwoValue", sender: nil)
             }
             break
+        case "平均":
+            self.childCell = selectedList.speedList[indexPath.row]
+            
+            performSegue(withIdentifier: "toTwoValue", sender: nil)
+            break
+        case "割合":
+            self.childCell = selectedList.speedList[indexPath.row]
+            
+            if (self.childCell == "分速") || (self.childCell == "秒速") {
+                performSegue(withIdentifier: "toOneValue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "toTwoValue", sender: nil)
+            }
+            break
+        case "濃度":
+            self.childCell = selectedList.speedList[indexPath.row]
+            
+            if (self.childCell == "分速") || (self.childCell == "秒速") {
+                performSegue(withIdentifier: "toOneValue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "toTwoValue", sender: nil)
+            }
+            break
         default:
             break
         }
