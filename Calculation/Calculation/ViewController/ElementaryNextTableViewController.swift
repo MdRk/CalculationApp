@@ -42,10 +42,6 @@ class ElementaryNextTableViewController: UITableViewController {
             return selectedList.speedList.count
         case "平均":
             return selectedList.averageList.count
-        case "割合":
-            return selectedList.rateList.count
-        case "濃度":
-            return selectedList.concentrationList.count
         default:
             break
         }
@@ -73,12 +69,6 @@ class ElementaryNextTableViewController: UITableViewController {
             break
         case "平均":
             cell.textLabel!.text = selectedList.averageList[indexPath.row]
-            break
-        case "割合":
-            cell.textLabel!.text = selectedList.rateList[indexPath.row]
-            break
-        case "濃度":
-            cell.textLabel!.text = selectedList.concentrationList[indexPath.row]
             break
         default:
             break
@@ -135,27 +125,9 @@ class ElementaryNextTableViewController: UITableViewController {
             }
             break
         case "平均":
-            self.childCell = selectedList.speedList[indexPath.row]
+            self.childCell = selectedList.averageList[indexPath.row]
             
             performSegue(withIdentifier: "toTwoValue", sender: nil)
-            break
-        case "割合":
-            self.childCell = selectedList.speedList[indexPath.row]
-            
-            if (self.childCell == "分速") || (self.childCell == "秒速") {
-                performSegue(withIdentifier: "toOneValue", sender: nil)
-            } else {
-                performSegue(withIdentifier: "toTwoValue", sender: nil)
-            }
-            break
-        case "濃度":
-            self.childCell = selectedList.speedList[indexPath.row]
-            
-            if (self.childCell == "分速") || (self.childCell == "秒速") {
-                performSegue(withIdentifier: "toOneValue", sender: nil)
-            } else {
-                performSegue(withIdentifier: "toTwoValue", sender: nil)
-            }
             break
         default:
             break

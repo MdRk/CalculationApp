@@ -54,8 +54,6 @@
 		3239039321B0EDFA00E518EE /* CircleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039221B0EDFA00E518EE /* CircleListModel.swift */; };
 		3239039521B0EE0F00E518EE /* SpeedListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039421B0EE0F00E518EE /* SpeedListModel.swift */; };
 		3239039721B0EE3800E518EE /* AverageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039621B0EE3800E518EE /* AverageListModel.swift */; };
-		3239039921B0EE4E00E518EE /* RateListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039821B0EE4E00E518EE /* RateListModel.swift */; };
-		3239039B21B0EE6300E518EE /* ConcentrationListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039A21B0EE6300E518EE /* ConcentrationListModel.swift */; };
 		324C571521E445D70068A242 /* CalculationModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C571421E445D70068A242 /* CalculationModelTest.swift */; };
 		324C572421E732D60068A242 /* 距離.png in Resources */ = {isa = PBXBuildFile; fileRef = 324C571F21E732D60068A242 /* 距離.png */; };
 		324C572521E732D60068A242 /* 分速.png in Resources */ = {isa = PBXBuildFile; fileRef = 324C572021E732D60068A242 /* 分速.png */; };
@@ -140,8 +138,6 @@
 		3239039221B0EDFA00E518EE /* CircleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleListModel.swift; sourceTree = "<group>"; };
 		3239039421B0EE0F00E518EE /* SpeedListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedListModel.swift; sourceTree = "<group>"; };
 		3239039621B0EE3800E518EE /* AverageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageListModel.swift; sourceTree = "<group>"; };
-		3239039821B0EE4E00E518EE /* RateListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateListModel.swift; sourceTree = "<group>"; };
-		3239039A21B0EE6300E518EE /* ConcentrationListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationListModel.swift; sourceTree = "<group>"; };
 		324C571421E445D70068A242 /* CalculationModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModelTest.swift; sourceTree = "<group>"; };
 		324C571F21E732D60068A242 /* 距離.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "距離.png"; sourceTree = "<group>"; };
 		324C572021E732D60068A242 /* 分速.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分速.png"; sourceTree = "<group>"; };
@@ -240,8 +236,6 @@
 				3239039221B0EDFA00E518EE /* CircleListModel.swift */,
 				3239039421B0EE0F00E518EE /* SpeedListModel.swift */,
 				3239039621B0EE3800E518EE /* AverageListModel.swift */,
-				3239039821B0EE4E00E518EE /* RateListModel.swift */,
-				3239039A21B0EE6300E518EE /* ConcentrationListModel.swift */,
 			);
 			path = Elementary;
 			sourceTree = "<group>";
@@ -596,7 +590,6 @@
 				3239038921B0EB3F00E518EE /* CellModel.swift in Sources */,
 				3239039121B0EDE600E518EE /* VolumeListModel.swift in Sources */,
 				3239039321B0EDFA00E518EE /* CircleListModel.swift in Sources */,
-				3239039B21B0EE6300E518EE /* ConcentrationListModel.swift in Sources */,
 				3239039721B0EE3800E518EE /* AverageListModel.swift in Sources */,
 				3239038D21B0ECBA00E518EE /* FourListModel.swift in Sources */,
 				32B3AE9B21940F2700C14C20 /* ViewController.swift in Sources */,
@@ -604,7 +597,6 @@
 				3239038B21B0EC0100E518EE /* ElementaryModel.swift in Sources */,
 				32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */,
 				3218E11E21D866C800916728 /* ThreeValueViewController.swift in Sources */,
-				3239039921B0EE4E00E518EE /* RateListModel.swift in Sources */,
 				32181C44219983ED009290A9 /* TwoValueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

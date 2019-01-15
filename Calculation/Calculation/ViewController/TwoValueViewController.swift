@@ -255,7 +255,7 @@ class TwoValueViewController: UIViewController {
             break
         case "個数":
             answer = calculation.division(value1: value1, value2: value2)
-            answerLabel.text = String(format: "%0.2f", answer)
+            answerLabel.text = String(format: "%0.0f", floor(answer))
             break
         case "人口密度":
             answer = calculation.division(value1: value1, value2: value2)
