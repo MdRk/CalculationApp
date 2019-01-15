@@ -42,10 +42,6 @@ class ElementaryNextTableViewController: UITableViewController {
             return selectedList.speedList.count
         case "平均":
             return selectedList.averageList.count
-        case "割合":
-            return selectedList.rateList.count
-        case "濃度":
-            return selectedList.concentrationList.count
         default:
             break
         }
@@ -73,12 +69,6 @@ class ElementaryNextTableViewController: UITableViewController {
             break
         case "平均":
             cell.textLabel!.text = selectedList.averageList[indexPath.row]
-            break
-        case "割合":
-            cell.textLabel!.text = selectedList.rateList[indexPath.row]
-            break
-        case "濃度":
-            cell.textLabel!.text = selectedList.concentrationList[indexPath.row]
             break
         default:
             break
@@ -133,6 +123,11 @@ class ElementaryNextTableViewController: UITableViewController {
             } else {
                 performSegue(withIdentifier: "toTwoValue", sender: nil)
             }
+            break
+        case "平均":
+            self.childCell = selectedList.averageList[indexPath.row]
+            
+            performSegue(withIdentifier: "toTwoValue", sender: nil)
             break
         default:
             break

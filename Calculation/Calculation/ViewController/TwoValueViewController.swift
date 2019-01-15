@@ -131,6 +131,26 @@ class TwoValueViewController: UIViewController {
             value1Label.text = "距離"
             value2Label.text = "速さ"
             break
+        case "平均":
+            //officialImageView.image = UIImage(named: "平均")
+            value1Label.text = "合計"
+            value2Label.text = "個数"
+            break
+        case "合計":
+            //officialImageView.image = UIImage(named: "合計")
+            value1Label.text = "平均"
+            value2Label.text = "個数"
+            break
+        case "個数":
+            //officialImageView.image = UIImage(named: "個数")
+            value1Label.text = "合計"
+            value2Label.text = "平均"
+            break
+        case "人口密度":
+            //officialImageView.image = UIImage(named: "人口密度")
+            value1Label.text = "人口"
+            value2Label.text = "面積"
+            break
         default:
             break
         }
@@ -222,6 +242,22 @@ class TwoValueViewController: UIViewController {
             answerLabel.text = String(format: "%0.0f", answer)
             break
         case "時間":
+            answer = calculation.division(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "平均":
+            answer = calculation.division(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "合計":
+            answer = calculation.multiplication(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "個数":
+            answer = calculation.division(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.0f", floor(answer))
+            break
+        case "人口密度":
             answer = calculation.division(value1: value1, value2: value2)
             answerLabel.text = String(format: "%0.2f", answer)
             break

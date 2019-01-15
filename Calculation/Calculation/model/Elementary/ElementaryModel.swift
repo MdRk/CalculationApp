@@ -15,6 +15,4 @@ class ElementaryModel: NSObject {
     let circleList = ["円周", "扇形の弧"]
     let speedList = ["速さ", "距離", "時間", "分速", "秒速"]
     let averageList = ["平均", "合計", "個数", "人口密度"]
-    let rateList = ["割合", "比べる量", "元にする量"]
-    let concentrationList = ["水溶液の濃度", "溶質", "水溶液"]
 }
