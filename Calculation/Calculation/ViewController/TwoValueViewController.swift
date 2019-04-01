@@ -18,6 +18,7 @@ class TwoValueViewController: UIViewController {
     @IBOutlet weak var value1Label: UILabel!
     @IBOutlet weak var value2Label: UILabel!
     
+    var parentCell: String = ""
     var selectedCell: String = ""
     
     var calculation = CalculationModel()
@@ -83,6 +84,73 @@ class TwoValueViewController: UIViewController {
             value1Label.text = "弧"
             value2Label.text = "半径"
             break
+        case "円柱":
+            if parentCell == "面積" {
+                officialImageView.image = UIImage(named: "円柱表面積")
+                value1Label.text = "半径"
+                value2Label.text = "高さ"
+            } else {
+                officialImageView.image = UIImage(named: "円柱体積")
+                value1Label.text = "r"
+                value2Label.text = "h"
+            }
+            break
+        case "四角錐":
+            officialImageView.image = UIImage(named: "四角錐体積")
+            value1Label.text = "弧"
+            value2Label.text = "半径"
+            break
+        case "円錐":
+            if parentCell == "面積" {
+                officialImageView.image = UIImage(named: "円錐表面積")
+                value1Label.text = "S"
+                value2Label.text = "h"
+            } else {
+                officialImageView.image = UIImage(named: "円錐体積")
+                value1Label.text = "r"
+                value2Label.text = "h"
+            }
+            break
+        case "扇形の弧":
+            officialImageView.image = UIImage(named: "扇形の弧")
+            value1Label.text = "r"
+            value2Label.text = "x"
+            break
+        case "速さ":
+            officialImageView.image = UIImage(named: "速さ")
+            value1Label.text = "距離"
+            value2Label.text = "時間"
+            break
+        case "距離":
+            officialImageView.image = UIImage(named: "距離")
+            value1Label.text = "速さ"
+            value2Label.text = "時間"
+            break
+        case "時間":
+            officialImageView.image = UIImage(named: "時間")
+            value1Label.text = "距離"
+            value2Label.text = "速さ"
+            break
+        case "平均":
+            //officialImageView.image = UIImage(named: "平均")
+            value1Label.text = "合計"
+            value2Label.text = "個数"
+            break
+        case "合計":
+            //officialImageView.image = UIImage(named: "合計")
+            value1Label.text = "平均"
+            value2Label.text = "個数"
+            break
+        case "個数":
+            //officialImageView.image = UIImage(named: "個数")
+            value1Label.text = "合計"
+            value2Label.text = "平均"
+            break
+        case "人口密度":
+            //officialImageView.image = UIImage(named: "人口密度")
+            value1Label.text = "人口"
+            value2Label.text = "面積"
+            break
         default:
             break
         }
@@ -137,6 +205,60 @@ class TwoValueViewController: UIViewController {
             break
         case "扇形２":
             answer = calculation.sector2(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "円柱":
+            if parentCell == "面積" {
+                answer = calculation.areaCylinder(value1: value1, value2: value2)
+                answerLabel.text = String(format: "%0.2f", answer)
+            } else {
+                answer = calculation.volumeCylinder(value1: value1, value2: value2)
+                answerLabel.text = String(format: "%0.2f", answer)
+            }
+            break
+        case "四角錐":
+            answer = calculation.volumeSquarePyramid(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "円錐":
+            if parentCell == "面積" {
+                answer = calculation.areaCone(value1: value1, value2: value2)
+                answerLabel.text = String(format: "%0.2f", answer)
+            } else {
+                answer = calculation.volumeCone(value1: value1, value2: value2)
+                answerLabel.text = String(format: "%0.2f", answer)
+            }
+            break
+        case "扇形の弧":
+            answer = calculation.fanArc(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "速さ":
+            answer = calculation.division(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "距離":
+            answer = calculation.multiplication(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.0f", answer)
+            break
+        case "時間":
+            answer = calculation.division(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "平均":
+            answer = calculation.division(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "合計":
+            answer = calculation.multiplication(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "個数":
+            answer = calculation.division(value1: value1, value2: value2)
+            answerLabel.text = String(format: "%0.0f", floor(answer))
+            break
+        case "人口密度":
+            answer = calculation.division(value1: value1, value2: value2)
             answerLabel.text = String(format: "%0.2f", answer)
             break
         default:

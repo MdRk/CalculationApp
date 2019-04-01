@@ -10,6 +10,7 @@ import UIKit
 
 class OneValueViewController: UIViewController {
 
+    var parentCell: String = ""
     var selectedCell: String = ""
     
     var calculation = CalculationModel()
@@ -35,6 +36,36 @@ class OneValueViewController: UIViewController {
             officialImageView.image = UIImage(named: "円")
             value1Label.text = "半径"
             break
+        case "立方体":
+            if parentCell == "面積" {
+                officialImageView.image = UIImage(named: "立方体表面積")
+                value1Label.text = "a"
+            } else {
+                officialImageView.image = UIImage(named: "立方体体積")
+                value1Label.text = "a"
+            }
+            break
+        case "球体":
+            if parentCell == "面積" {
+                officialImageView.image = UIImage(named: "球体表面積")
+                value1Label.text = "半径"
+            } else {
+                officialImageView.image = UIImage(named: "球体体積")
+                value1Label.text = "半径"
+            }
+            break
+        case "円周":
+            officialImageView.image = UIImage(named: "円周")
+            value1Label.text = "r"
+            break
+        case "分速":
+            officialImageView.image = UIImage(named: "分速")
+            value1Label.text = "時速"
+            break
+        case "秒速":
+            officialImageView.image = UIImage(named: "秒速")
+            value1Label.text = "分速"
+            break
         default:
             break
         }
@@ -46,6 +77,36 @@ class OneValueViewController: UIViewController {
         switch self.selectedCell {
         case "円":
             answer = calculation.circle(value1: value1)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "立方体":
+            if parentCell == "面積"{
+                answer = calculation.areaCube(value1: value1)
+                answerLabel.text = String(format: "%0.2f", answer)
+            } else {
+                answer = calculation.volumeCube(value1: value1)
+                answerLabel.text = String(format: "%0.2f", answer)
+            }
+            break
+        case "球体":
+            if parentCell == "面積" {
+                answer = calculation.areaSphere(value1: value1)
+                answerLabel.text = String(format: "%0.2f", answer)
+            } else {
+                answer = calculation.volumeSphere(value1: value1)
+                answerLabel.text = String(format: "%0.2f", answer)
+            }
+            break
+        case "円周":
+            answer = calculation.circumference(value1: value1)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "分速":
+            answer = calculation.minuteSecondSpeed(value1: value1)
+            answerLabel.text = String(format: "%0.2f", answer)
+            break
+        case "秒速":
+            answer = calculation.minuteSecondSpeed(value1: value1)
             answerLabel.text = String(format: "%0.2f", answer)
             break
         default:

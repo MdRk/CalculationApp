@@ -42,10 +42,6 @@ class ElementaryNextTableViewController: UITableViewController {
             return selectedList.speedList.count
         case "平均":
             return selectedList.averageList.count
-        case "割合":
-            return selectedList.rateList.count
-        case "濃度":
-            return selectedList.concentrationList.count
         default:
             break
         }
@@ -74,12 +70,6 @@ class ElementaryNextTableViewController: UITableViewController {
         case "平均":
             cell.textLabel!.text = selectedList.averageList[indexPath.row]
             break
-        case "割合":
-            cell.textLabel!.text = selectedList.rateList[indexPath.row]
-            break
-        case "濃度":
-            cell.textLabel!.text = selectedList.concentrationList[indexPath.row]
-            break
         default:
             break
         }
@@ -97,13 +87,47 @@ class ElementaryNextTableViewController: UITableViewController {
         case "面積":
             self.childCell = selectedList.areaList[indexPath.row]
             
-            if self.childCell == "円" {
+            if (self.childCell == "円") || (self.childCell == "立方体") || (self.childCell == "球体") {
                 performSegue(withIdentifier: "toOneValue", sender: nil)
-            } else if self.childCell == "台形"{
+            } else if (self.childCell == "台形") || (self.childCell == "直方体") || (self.childCell == "四角錐") {
                 performSegue(withIdentifier: "toThreeValue", sender: nil)
             } else {
                 performSegue(withIdentifier: "toTwoValue", sender: nil)
             }
+            break
+        case "体積":
+            self.childCell = selectedList.volumeList[indexPath.row]
+            
+            if (self.childCell == "立方体") || (self.childCell == "球体"){
+                performSegue(withIdentifier: "toOneValue", sender: nil)
+            } else if (self.childCell == "直方体"){
+                performSegue(withIdentifier: "toThreeValue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "toTwoValue", sender: nil)
+            }
+            break
+        case "円":
+            self.childCell = selectedList.circleList[indexPath.row]
+            
+            if (self.childCell == "円周") {
+                performSegue(withIdentifier: "toOneValue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "toTwoValue", sender: nil)
+            }
+            break
+        case "速さ":
+            self.childCell = selectedList.speedList[indexPath.row]
+            
+            if (self.childCell == "分速") || (self.childCell == "秒速") {
+                performSegue(withIdentifier: "toOneValue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "toTwoValue", sender: nil)
+            }
+            break
+        case "平均":
+            self.childCell = selectedList.averageList[indexPath.row]
+            
+            performSegue(withIdentifier: "toTwoValue", sender: nil)
             break
         default:
             break
@@ -116,14 +140,17 @@ class ElementaryNextTableViewController: UITableViewController {
         if (segue.identifier == "toTwoValue") {
             let nextVC: TwoValueViewController = (segue.destination as? TwoValueViewController)!
             
+            nextVC.parentCell = self.selectedCell
             nextVC.selectedCell = self.childCell
         } else if (segue.identifier == "toOneValue") {
             let nextVC: OneValueViewController = (segue.destination as? OneValueViewController)!
             
+            nextVC.parentCell = self.selectedCell
             nextVC.selectedCell = self.childCell
         } else if (segue.identifier == "toThreeValue") {
             let nextVC: ThreeValueViewController = (segue.destination as? ThreeValueViewController)!
             
+            nextVC.parentCell = self.selectedCell
             nextVC.selectedCell = self.childCell
         }
     }
