@@ -10,6 +10,7 @@ import UIKit
 
 class ElementaryTableViewController: UITableViewController {
 
+    
     let officialList = ["四則演算", "面積", "体積", "円", "速さ", "平均", "割合", "濃度"]
     let navigationTitle = "小学生"
     var selectedCell = ""
