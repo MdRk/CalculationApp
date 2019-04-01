@@ -13,13 +13,8 @@
 		32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */; };
 		32B3AEAE21940F2900C14C20 /* CalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AEAD21940F2900C14C20 /* CalculationTests.swift */; };
 		32B3AEB921940F2900C14C20 /* CalculationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AEB821940F2900C14C20 /* CalculationUITests.swift */; };
-		32D2D3592251EA8000D4402A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2D3582251EA8000D4402A /* Main.storyboard */; };
-		32D2D35B2251EB4B00D4402A /* ElementaryVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2D35A2251EB4B00D4402A /* ElementaryVC.storyboard */; };
-		32D2D35D2251EB7300D4402A /* JuniorVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2D35C2251EB7300D4402A /* JuniorVC.storyboard */; };
-		32D2D35F2251EB8600D4402A /* HighVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2D35E2251EB8600D4402A /* HighVC.storyboard */; };
-		32D2D3612251EBAC00D4402A /* ElementaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2D3602251EBAC00D4402A /* ElementaryViewController.swift */; };
-		32D2D3632251EBBD00D4402A /* JuniorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2D3622251EBBD00D4402A /* JuniorViewController.swift */; };
-		32D2D3652251EBC900D4402A /* HighViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2D3642251EBC900D4402A /* HighViewController.swift */; };
+		32D2D36722522E1100D4402A /* HomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2D36622522E1100D4402A /* HomeVC.storyboard */; };
+		32D2D36922522E1F00D4402A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2D36822522E1F00D4402A /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +47,8 @@
 		32B3AEB421940F2900C14C20 /* CalculationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3AEB821940F2900C14C20 /* CalculationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationUITests.swift; sourceTree = "<group>"; };
 		32B3AEBA21940F2900C14C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32D2D3582251EA8000D4402A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		32D2D35A2251EB4B00D4402A /* ElementaryVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ElementaryVC.storyboard; sourceTree = "<group>"; };
-		32D2D35C2251EB7300D4402A /* JuniorVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JuniorVC.storyboard; sourceTree = "<group>"; };
-		32D2D35E2251EB8600D4402A /* HighVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HighVC.storyboard; sourceTree = "<group>"; };
-		32D2D3602251EBAC00D4402A /* ElementaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryViewController.swift; sourceTree = "<group>"; };
-		32D2D3622251EBBD00D4402A /* JuniorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuniorViewController.swift; sourceTree = "<group>"; };
-		32D2D3642251EBC900D4402A /* HighViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighViewController.swift; sourceTree = "<group>"; };
+		32D2D36622522E1100D4402A /* HomeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeVC.storyboard; sourceTree = "<group>"; };
+		32D2D36822522E1F00D4402A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +79,7 @@
 		32181C3F2199807A009290A9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				32D2D3602251EBAC00D4402A /* ElementaryViewController.swift */,
-				32D2D3622251EBBD00D4402A /* JuniorViewController.swift */,
-				32D2D3642251EBC900D4402A /* HighViewController.swift */,
+				32D2D36822522E1F00D4402A /* HomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -99,10 +87,7 @@
 		32181C4021998084009290A9 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				32D2D3582251EA8000D4402A /* Main.storyboard */,
-				32D2D35A2251EB4B00D4402A /* ElementaryVC.storyboard */,
-				32D2D35C2251EB7300D4402A /* JuniorVC.storyboard */,
-				32D2D35E2251EB8600D4402A /* HighVC.storyboard */,
+				32D2D36622522E1100D4402A /* HomeVC.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -264,11 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */,
-				32D2D35B2251EB4B00D4402A /* ElementaryVC.storyboard in Resources */,
+				32D2D36722522E1100D4402A /* HomeVC.storyboard in Resources */,
 				32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */,
-				32D2D3592251EA8000D4402A /* Main.storyboard in Resources */,
-				32D2D35D2251EB7300D4402A /* JuniorVC.storyboard in Resources */,
-				32D2D35F2251EB8600D4402A /* HighVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D2D3612251EBAC00D4402A /* ElementaryViewController.swift in Sources */,
 				32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */,
-				32D2D3652251EBC900D4402A /* HighViewController.swift in Sources */,
-				32D2D3632251EBBD00D4402A /* JuniorViewController.swift in Sources */,
+				32D2D36922522E1F00D4402A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

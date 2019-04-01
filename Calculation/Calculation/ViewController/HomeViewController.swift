@@ -1,5 +1,5 @@
 //
-//  ElementaryViewController.swift
+//  HomeViewController.swift
 //  Calculation
 //
 //  Created by 前田陸 on 2019/04/01.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ElementaryViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
