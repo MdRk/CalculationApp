@@ -7,66 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32181C0F21955446009290A9 /* ElementaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C0E21955446009290A9 /* ElementaryTableViewController.swift */; };
-		32181C1121955463009290A9 /* MiddleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C1021955463009290A9 /* MiddleTableViewController.swift */; };
-		32181C132195547A009290A9 /* HighTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C122195547A009290A9 /* HighTableViewController.swift */; };
-		32181C1521955497009290A9 /* ElementaryTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C1421955497009290A9 /* ElementaryTableVC.storyboard */; };
-		32181C17219554A9009290A9 /* MiddleTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C16219554A9009290A9 /* MiddleTableVC.storyboard */; };
-		32181C19219554BF009290A9 /* HighTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C18219554BF009290A9 /* HighTableVC.storyboard */; };
-		32181C1B21957EC8009290A9 /* ElementaryNextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C1A21957EC8009290A9 /* ElementaryNextTableViewController.swift */; };
-		32181C1F21957F13009290A9 /* ElementaryNextTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C1E21957F13009290A9 /* ElementaryNextTableVC.storyboard */; };
-		32181C3B21997C55009290A9 /* TwoValueVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32181C3A21997C55009290A9 /* TwoValueVC.storyboard */; };
-		32181C44219983ED009290A9 /* TwoValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32181C43219983ED009290A9 /* TwoValueViewController.swift */; };
-		3218E10621D7490000916728 /* OneValueVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3218E10521D7490000916728 /* OneValueVC.storyboard */; };
-		3218E10821D7493600916728 /* OneValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3218E10721D7493600916728 /* OneValueViewController.swift */; };
-		3218E10A21D7661000916728 /* 長方形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E10921D7661000916728 /* 長方形.png */; };
-		3218E11021D76A6A00916728 /* 平行四辺形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E10F21D76A6A00916728 /* 平行四辺形.png */; };
-		3218E11221D76BE700916728 /* 三角形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11121D76BE700916728 /* 三角形.png */; };
-		3218E11421D76E1C00916728 /* 台形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11321D76E1C00916728 /* 台形.png */; };
-		3218E11621D7A7A400916728 /* ひし形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11521D7A7A400916728 /* ひし形.png */; };
-		3218E11821D83C2700916728 /* 円.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11721D83C2700916728 /* 円.png */; };
-		3218E11C21D866A300916728 /* ThreeValueVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11B21D866A300916728 /* ThreeValueVC.storyboard */; };
-		3218E11E21D866C800916728 /* ThreeValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3218E11D21D866C800916728 /* ThreeValueViewController.swift */; };
-		3218E12021D885EB00916728 /* 扇形1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E11F21D885EB00916728 /* 扇形1.png */; };
-		3218E12221DA02B900916728 /* 扇形2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12121DA02B900916728 /* 扇形2.png */; };
-		3218E12721DB49E600916728 /* 円錐表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12321DB49E500916728 /* 円錐表面積.png */; };
-		3218E12821DB49E600916728 /* 円柱表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12421DB49E600916728 /* 円柱表面積.png */; };
-		3218E12921DB49E600916728 /* 球体表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12521DB49E600916728 /* 球体表面積.png */; };
-		3218E12A21DB49E600916728 /* 四角錐表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12621DB49E600916728 /* 四角錐表面積.png */; };
-		3218E12D21DB4A1100916728 /* 立方体表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12B21DB4A1100916728 /* 立方体表面積.png */; };
-		3218E12E21DB4A1100916728 /* 直方体表面積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12C21DB4A1100916728 /* 直方体表面積.png */; };
-		3218E13321DF5EB200916728 /* 円柱体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E12F21DF5EB000916728 /* 円柱体積.png */; };
-		3218E13421DF5EB200916728 /* 円錐体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13021DF5EB000916728 /* 円錐体積.png */; };
-		3218E13521DF5EB200916728 /* 球体体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13121DF5EB100916728 /* 球体体積.png */; };
-		3218E13621DF5EB200916728 /* 四角錐体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13221DF5EB100916728 /* 四角錐体積.png */; };
-		3218E13921DF5ED400916728 /* 直方体体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13721DF5ED300916728 /* 直方体体積.png */; };
-		3218E13A21DF5ED400916728 /* 立方体体積.png in Resources */ = {isa = PBXBuildFile; fileRef = 3218E13821DF5ED400916728 /* 立方体体積.png */; };
-		322CFD3021E1E7A9007145C5 /* 扇形の弧.png in Resources */ = {isa = PBXBuildFile; fileRef = 322CFD2E21E1E7A9007145C5 /* 扇形の弧.png */; };
-		322CFD3121E1E7A9007145C5 /* 円周.png in Resources */ = {isa = PBXBuildFile; fileRef = 322CFD2F21E1E7A9007145C5 /* 円周.png */; };
-		3239038021B0D2AA00E518EE /* 累乗.png in Resources */ = {isa = PBXBuildFile; fileRef = 3239037F21B0D2AA00E518EE /* 累乗.png */; };
-		3239038521B0DB6500E518EE /* 正方形.png in Resources */ = {isa = PBXBuildFile; fileRef = 3239038421B0DB6500E518EE /* 正方形.png */; };
-		3239038721B0DE6600E518EE /* CalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038621B0DE6600E518EE /* CalculationModel.swift */; };
-		3239038921B0EB3F00E518EE /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038821B0EB3F00E518EE /* CellModel.swift */; };
-		3239038B21B0EC0100E518EE /* ElementaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038A21B0EC0100E518EE /* ElementaryModel.swift */; };
-		3239038D21B0ECBA00E518EE /* FourListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038C21B0ECBA00E518EE /* FourListModel.swift */; };
-		3239038F21B0EDCD00E518EE /* AreaListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239038E21B0EDCD00E518EE /* AreaListModel.swift */; };
-		3239039121B0EDE600E518EE /* VolumeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039021B0EDE600E518EE /* VolumeListModel.swift */; };
-		3239039321B0EDFA00E518EE /* CircleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039221B0EDFA00E518EE /* CircleListModel.swift */; };
-		3239039521B0EE0F00E518EE /* SpeedListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039421B0EE0F00E518EE /* SpeedListModel.swift */; };
-		3239039721B0EE3800E518EE /* AverageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239039621B0EE3800E518EE /* AverageListModel.swift */; };
 		324C571521E445D70068A242 /* CalculationModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C571421E445D70068A242 /* CalculationModelTest.swift */; };
-		324C572421E732D60068A242 /* 距離.png in Resources */ = {isa = PBXBuildFile; fileRef = 324C571F21E732D60068A242 /* 距離.png */; };
-		324C572521E732D60068A242 /* 分速.png in Resources */ = {isa = PBXBuildFile; fileRef = 324C572021E732D60068A242 /* 分速.png */; };
-		324C572621E732D60068A242 /* 秒速.png in Resources */ = {isa = PBXBuildFile; fileRef = 324C572121E732D60068A242 /* 秒速.png */; };
-		324C572721E732D60068A242 /* 速さ.png in Resources */ = {isa = PBXBuildFile; fileRef = 324C572221E732D60068A242 /* 速さ.png */; };
-		324C572821E732D60068A242 /* 時間.png in Resources */ = {isa = PBXBuildFile; fileRef = 324C572321E732D60068A242 /* 時間.png */; };
-		325EC29121AFCA07002C2312 /* 除算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC28D21AFCA07002C2312 /* 除算.png */; };
-		325EC29221AFCA07002C2312 /* 加算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC28E21AFCA07002C2312 /* 加算.png */; };
-		325EC29321AFCA07002C2312 /* 減算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC28F21AFCA07002C2312 /* 減算.png */; };
-		325EC29421AFCA07002C2312 /* 乗算.png in Resources */ = {isa = PBXBuildFile; fileRef = 325EC29021AFCA07002C2312 /* 乗算.png */; };
 		32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AE9821940F2700C14C20 /* AppDelegate.swift */; };
-		32B3AE9B21940F2700C14C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AE9A21940F2700C14C20 /* ViewController.swift */; };
-		32B3AE9E21940F2700C14C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AE9C21940F2700C14C20 /* Main.storyboard */; };
 		32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AE9F21940F2900C14C20 /* Assets.xcassets */; };
 		32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */; };
 		32B3AEAE21940F2900C14C20 /* CalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AEAD21940F2900C14C20 /* CalculationTests.swift */; };
@@ -91,67 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32181C0E21955446009290A9 /* ElementaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryTableViewController.swift; sourceTree = "<group>"; };
-		32181C1021955463009290A9 /* MiddleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleTableViewController.swift; sourceTree = "<group>"; };
-		32181C122195547A009290A9 /* HighTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighTableViewController.swift; sourceTree = "<group>"; };
-		32181C1421955497009290A9 /* ElementaryTableVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ElementaryTableVC.storyboard; sourceTree = "<group>"; };
-		32181C16219554A9009290A9 /* MiddleTableVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MiddleTableVC.storyboard; sourceTree = "<group>"; };
-		32181C18219554BF009290A9 /* HighTableVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HighTableVC.storyboard; sourceTree = "<group>"; };
-		32181C1A21957EC8009290A9 /* ElementaryNextTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryNextTableViewController.swift; sourceTree = "<group>"; };
-		32181C1E21957F13009290A9 /* ElementaryNextTableVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ElementaryNextTableVC.storyboard; sourceTree = "<group>"; };
-		32181C3A21997C55009290A9 /* TwoValueVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TwoValueVC.storyboard; sourceTree = "<group>"; };
-		32181C43219983ED009290A9 /* TwoValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoValueViewController.swift; sourceTree = "<group>"; };
-		3218E10521D7490000916728 /* OneValueVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneValueVC.storyboard; sourceTree = "<group>"; };
-		3218E10721D7493600916728 /* OneValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneValueViewController.swift; sourceTree = "<group>"; };
-		3218E10921D7661000916728 /* 長方形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "長方形.png"; sourceTree = "<group>"; };
-		3218E10F21D76A6A00916728 /* 平行四辺形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "平行四辺形.png"; sourceTree = "<group>"; };
-		3218E11121D76BE700916728 /* 三角形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "三角形.png"; sourceTree = "<group>"; };
-		3218E11321D76E1C00916728 /* 台形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "台形.png"; sourceTree = "<group>"; };
-		3218E11521D7A7A400916728 /* ひし形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひし形.png"; sourceTree = "<group>"; };
-		3218E11721D83C2700916728 /* 円.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円.png"; sourceTree = "<group>"; };
-		3218E11B21D866A300916728 /* ThreeValueVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThreeValueVC.storyboard; sourceTree = "<group>"; };
-		3218E11D21D866C800916728 /* ThreeValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeValueViewController.swift; sourceTree = "<group>"; };
-		3218E11F21D885EB00916728 /* 扇形1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扇形1.png"; sourceTree = "<group>"; };
-		3218E12121DA02B900916728 /* 扇形2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扇形2.png"; sourceTree = "<group>"; };
-		3218E12321DB49E500916728 /* 円錐表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円錐表面積.png"; sourceTree = "<group>"; };
-		3218E12421DB49E600916728 /* 円柱表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円柱表面積.png"; sourceTree = "<group>"; };
-		3218E12521DB49E600916728 /* 球体表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "球体表面積.png"; sourceTree = "<group>"; };
-		3218E12621DB49E600916728 /* 四角錐表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "四角錐表面積.png"; sourceTree = "<group>"; };
-		3218E12B21DB4A1100916728 /* 立方体表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立方体表面積.png"; sourceTree = "<group>"; };
-		3218E12C21DB4A1100916728 /* 直方体表面積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "直方体表面積.png"; sourceTree = "<group>"; };
-		3218E12F21DF5EB000916728 /* 円柱体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円柱体積.png"; sourceTree = "<group>"; };
-		3218E13021DF5EB000916728 /* 円錐体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円錐体積.png"; sourceTree = "<group>"; };
-		3218E13121DF5EB100916728 /* 球体体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "球体体積.png"; sourceTree = "<group>"; };
-		3218E13221DF5EB100916728 /* 四角錐体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "四角錐体積.png"; sourceTree = "<group>"; };
-		3218E13721DF5ED300916728 /* 直方体体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "直方体体積.png"; sourceTree = "<group>"; };
-		3218E13821DF5ED400916728 /* 立方体体積.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立方体体積.png"; sourceTree = "<group>"; };
-		322CFD2E21E1E7A9007145C5 /* 扇形の弧.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扇形の弧.png"; sourceTree = "<group>"; };
-		322CFD2F21E1E7A9007145C5 /* 円周.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "円周.png"; sourceTree = "<group>"; };
-		3239037F21B0D2AA00E518EE /* 累乗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "累乗.png"; sourceTree = "<group>"; };
-		3239038421B0DB6500E518EE /* 正方形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "正方形.png"; sourceTree = "<group>"; };
-		3239038621B0DE6600E518EE /* CalculationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModel.swift; sourceTree = "<group>"; };
-		3239038821B0EB3F00E518EE /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
-		3239038A21B0EC0100E518EE /* ElementaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryModel.swift; sourceTree = "<group>"; };
-		3239038C21B0ECBA00E518EE /* FourListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourListModel.swift; sourceTree = "<group>"; };
-		3239038E21B0EDCD00E518EE /* AreaListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListModel.swift; sourceTree = "<group>"; };
-		3239039021B0EDE600E518EE /* VolumeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeListModel.swift; sourceTree = "<group>"; };
-		3239039221B0EDFA00E518EE /* CircleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleListModel.swift; sourceTree = "<group>"; };
-		3239039421B0EE0F00E518EE /* SpeedListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedListModel.swift; sourceTree = "<group>"; };
-		3239039621B0EE3800E518EE /* AverageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageListModel.swift; sourceTree = "<group>"; };
 		324C571421E445D70068A242 /* CalculationModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModelTest.swift; sourceTree = "<group>"; };
-		324C571F21E732D60068A242 /* 距離.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "距離.png"; sourceTree = "<group>"; };
-		324C572021E732D60068A242 /* 分速.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分速.png"; sourceTree = "<group>"; };
-		324C572121E732D60068A242 /* 秒速.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "秒速.png"; sourceTree = "<group>"; };
-		324C572221E732D60068A242 /* 速さ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "速さ.png"; sourceTree = "<group>"; };
-		324C572321E732D60068A242 /* 時間.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "時間.png"; sourceTree = "<group>"; };
-		325EC28D21AFCA07002C2312 /* 除算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "除算.png"; sourceTree = "<group>"; };
-		325EC28E21AFCA07002C2312 /* 加算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加算.png"; sourceTree = "<group>"; };
-		325EC28F21AFCA07002C2312 /* 減算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "減算.png"; sourceTree = "<group>"; };
-		325EC29021AFCA07002C2312 /* 乗算.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "乗算.png"; sourceTree = "<group>"; };
 		32B3AE9521940F2700C14C20 /* Calculation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3AE9821940F2700C14C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32B3AE9A21940F2700C14C20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		32B3AE9D21940F2700C14C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32B3AE9F21940F2900C14C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B3AEA221940F2900C14C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B3AEA421940F2900C14C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -188,25 +72,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32181C3C21998011009290A9 /* image */ = {
-			isa = PBXGroup;
-			children = (
-				324C571621E731C20068A242 /* Elementary */,
-			);
-			path = image;
-			sourceTree = "<group>";
-		};
 		32181C3F2199807A009290A9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				32181C0E21955446009290A9 /* ElementaryTableViewController.swift */,
-				32181C1A21957EC8009290A9 /* ElementaryNextTableViewController.swift */,
-				3218E10721D7493600916728 /* OneValueViewController.swift */,
-				32181C43219983ED009290A9 /* TwoValueViewController.swift */,
-				3218E11D21D866C800916728 /* ThreeValueViewController.swift */,
-				32181C1021955463009290A9 /* MiddleTableViewController.swift */,
-				32181C122195547A009290A9 /* HighTableViewController.swift */,
-				32B3AE9A21940F2700C14C20 /* ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -214,145 +82,8 @@
 		32181C4021998084009290A9 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				32B3AE9C21940F2700C14C20 /* Main.storyboard */,
-				32181C1421955497009290A9 /* ElementaryTableVC.storyboard */,
-				32181C1E21957F13009290A9 /* ElementaryNextTableVC.storyboard */,
-				3218E10521D7490000916728 /* OneValueVC.storyboard */,
-				32181C3A21997C55009290A9 /* TwoValueVC.storyboard */,
-				3218E11B21D866A300916728 /* ThreeValueVC.storyboard */,
-				32181C16219554A9009290A9 /* MiddleTableVC.storyboard */,
-				32181C18219554BF009290A9 /* HighTableVC.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		3218E10421D5CA4500916728 /* Elementary */ = {
-			isa = PBXGroup;
-			children = (
-				3239038A21B0EC0100E518EE /* ElementaryModel.swift */,
-				3239038C21B0ECBA00E518EE /* FourListModel.swift */,
-				3239038E21B0EDCD00E518EE /* AreaListModel.swift */,
-				3239039021B0EDE600E518EE /* VolumeListModel.swift */,
-				3239039221B0EDFA00E518EE /* CircleListModel.swift */,
-				3239039421B0EE0F00E518EE /* SpeedListModel.swift */,
-				3239039621B0EE3800E518EE /* AverageListModel.swift */,
-			);
-			path = Elementary;
-			sourceTree = "<group>";
-		};
-		3239038121B0D88700E518EE /* model */ = {
-			isa = PBXGroup;
-			children = (
-				3239038621B0DE6600E518EE /* CalculationModel.swift */,
-				3239038821B0EB3F00E518EE /* CellModel.swift */,
-				3218E10421D5CA4500916728 /* Elementary */,
-			);
-			name = model;
-			path = Calculation/model;
-			sourceTree = SOURCE_ROOT;
-		};
-		324C571621E731C20068A242 /* Elementary */ = {
-			isa = PBXGroup;
-			children = (
-				324C571A21E732330068A242 /* areaList */,
-				324C571821E732320068A242 /* averageList */,
-				324C571921E732330068A242 /* circleList */,
-				324C571721E732320068A242 /* concentrationList */,
-				324C571C21E732330068A242 /* fourList */,
-				324C571E21E732330068A242 /* rateList */,
-				324C571D21E732330068A242 /* speedList */,
-				324C571B21E732330068A242 /* volumeList */,
-			);
-			path = Elementary;
-			sourceTree = "<group>";
-		};
-		324C571721E732320068A242 /* concentrationList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = concentrationList;
-			sourceTree = "<group>";
-		};
-		324C571821E732320068A242 /* averageList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = averageList;
-			sourceTree = "<group>";
-		};
-		324C571921E732330068A242 /* circleList */ = {
-			isa = PBXGroup;
-			children = (
-				322CFD2E21E1E7A9007145C5 /* 扇形の弧.png */,
-				322CFD2F21E1E7A9007145C5 /* 円周.png */,
-			);
-			path = circleList;
-			sourceTree = "<group>";
-		};
-		324C571A21E732330068A242 /* areaList */ = {
-			isa = PBXGroup;
-			children = (
-				3218E11121D76BE700916728 /* 三角形.png */,
-				3239038421B0DB6500E518EE /* 正方形.png */,
-				3218E10F21D76A6A00916728 /* 平行四辺形.png */,
-				3218E11321D76E1C00916728 /* 台形.png */,
-				3218E11521D7A7A400916728 /* ひし形.png */,
-				3218E11721D83C2700916728 /* 円.png */,
-				3218E11F21D885EB00916728 /* 扇形1.png */,
-				3218E12121DA02B900916728 /* 扇形2.png */,
-				3218E10921D7661000916728 /* 長方形.png */,
-				3218E12C21DB4A1100916728 /* 直方体表面積.png */,
-				3218E12B21DB4A1100916728 /* 立方体表面積.png */,
-				3218E12321DB49E500916728 /* 円錐表面積.png */,
-				3218E12421DB49E600916728 /* 円柱表面積.png */,
-				3218E12521DB49E600916728 /* 球体表面積.png */,
-				3218E12621DB49E600916728 /* 四角錐表面積.png */,
-			);
-			path = areaList;
-			sourceTree = "<group>";
-		};
-		324C571B21E732330068A242 /* volumeList */ = {
-			isa = PBXGroup;
-			children = (
-				3218E13721DF5ED300916728 /* 直方体体積.png */,
-				3218E13821DF5ED400916728 /* 立方体体積.png */,
-				3218E13021DF5EB000916728 /* 円錐体積.png */,
-				3218E12F21DF5EB000916728 /* 円柱体積.png */,
-				3218E13121DF5EB100916728 /* 球体体積.png */,
-				3218E13221DF5EB100916728 /* 四角錐体積.png */,
-			);
-			path = volumeList;
-			sourceTree = "<group>";
-		};
-		324C571C21E732330068A242 /* fourList */ = {
-			isa = PBXGroup;
-			children = (
-				325EC28E21AFCA07002C2312 /* 加算.png */,
-				325EC28F21AFCA07002C2312 /* 減算.png */,
-				325EC29021AFCA07002C2312 /* 乗算.png */,
-				325EC28D21AFCA07002C2312 /* 除算.png */,
-				3239037F21B0D2AA00E518EE /* 累乗.png */,
-			);
-			path = fourList;
-			sourceTree = "<group>";
-		};
-		324C571D21E732330068A242 /* speedList */ = {
-			isa = PBXGroup;
-			children = (
-				324C571F21E732D60068A242 /* 距離.png */,
-				324C572321E732D60068A242 /* 時間.png */,
-				324C572221E732D60068A242 /* 速さ.png */,
-				324C572121E732D60068A242 /* 秒速.png */,
-				324C572021E732D60068A242 /* 分速.png */,
-			);
-			path = speedList;
-			sourceTree = "<group>";
-		};
-		324C571E21E732330068A242 /* rateList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = rateList;
 			sourceTree = "<group>";
 		};
 		32B3AE8C21940F2700C14C20 = {
@@ -362,7 +93,6 @@
 				32B3AEAC21940F2900C14C20 /* CalculationTests */,
 				32B3AEB721940F2900C14C20 /* CalculationUITests */,
 				32B3AE9621940F2700C14C20 /* Products */,
-				32181C3C21998011009290A9 /* image */,
 			);
 			sourceTree = "<group>";
 		};
@@ -382,7 +112,6 @@
 				32B3AE9821940F2700C14C20 /* AppDelegate.swift */,
 				32181C3F2199807A009290A9 /* ViewController */,
 				32181C4021998084009290A9 /* Storyboard */,
-				3239038121B0D88700E518EE /* model */,
 				32B3AE9F21940F2900C14C20 /* Assets.xcassets */,
 				32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */,
 				32B3AEA421940F2900C14C20 /* Info.plist */,
@@ -513,49 +242,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3218E11421D76E1C00916728 /* 台形.png in Resources */,
-				3239038021B0D2AA00E518EE /* 累乗.png in Resources */,
-				325EC29221AFCA07002C2312 /* 加算.png in Resources */,
-				3218E13A21DF5ED400916728 /* 立方体体積.png in Resources */,
-				3218E11021D76A6A00916728 /* 平行四辺形.png in Resources */,
-				3218E11221D76BE700916728 /* 三角形.png in Resources */,
-				3218E12721DB49E600916728 /* 円錐表面積.png in Resources */,
-				325EC29121AFCA07002C2312 /* 除算.png in Resources */,
-				3218E12D21DB4A1100916728 /* 立方体表面積.png in Resources */,
-				32181C17219554A9009290A9 /* MiddleTableVC.storyboard in Resources */,
-				3218E12821DB49E600916728 /* 円柱表面積.png in Resources */,
-				32181C3B21997C55009290A9 /* TwoValueVC.storyboard in Resources */,
-				3218E13921DF5ED400916728 /* 直方体体積.png in Resources */,
-				324C572421E732D60068A242 /* 距離.png in Resources */,
-				324C572821E732D60068A242 /* 時間.png in Resources */,
-				322CFD3121E1E7A9007145C5 /* 円周.png in Resources */,
-				32181C1F21957F13009290A9 /* ElementaryNextTableVC.storyboard in Resources */,
-				325EC29321AFCA07002C2312 /* 減算.png in Resources */,
-				324C572721E732D60068A242 /* 速さ.png in Resources */,
-				3218E11C21D866A300916728 /* ThreeValueVC.storyboard in Resources */,
-				3218E12021D885EB00916728 /* 扇形1.png in Resources */,
 				32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */,
-				3239038521B0DB6500E518EE /* 正方形.png in Resources */,
-				3218E13421DF5EB200916728 /* 円錐体積.png in Resources */,
-				3218E11821D83C2700916728 /* 円.png in Resources */,
-				3218E12A21DB49E600916728 /* 四角錐表面積.png in Resources */,
 				32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */,
-				325EC29421AFCA07002C2312 /* 乗算.png in Resources */,
-				3218E12921DB49E600916728 /* 球体表面積.png in Resources */,
-				3218E12E21DB4A1100916728 /* 直方体表面積.png in Resources */,
-				3218E10621D7490000916728 /* OneValueVC.storyboard in Resources */,
-				322CFD3021E1E7A9007145C5 /* 扇形の弧.png in Resources */,
-				324C572521E732D60068A242 /* 分速.png in Resources */,
-				3218E13621DF5EB200916728 /* 四角錐体積.png in Resources */,
-				3218E13521DF5EB200916728 /* 球体体積.png in Resources */,
-				3218E13321DF5EB200916728 /* 円柱体積.png in Resources */,
-				324C572621E732D60068A242 /* 秒速.png in Resources */,
-				3218E10A21D7661000916728 /* 長方形.png in Resources */,
-				32181C1521955497009290A9 /* ElementaryTableVC.storyboard in Resources */,
-				3218E11621D7A7A400916728 /* ひし形.png in Resources */,
-				3218E12221DA02B900916728 /* 扇形2.png in Resources */,
-				32181C19219554BF009290A9 /* HighTableVC.storyboard in Resources */,
-				32B3AE9E21940F2700C14C20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,24 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32181C1B21957EC8009290A9 /* ElementaryNextTableViewController.swift in Sources */,
-				3239038721B0DE6600E518EE /* CalculationModel.swift in Sources */,
-				32181C1121955463009290A9 /* MiddleTableViewController.swift in Sources */,
-				32181C132195547A009290A9 /* HighTableViewController.swift in Sources */,
-				3239039521B0EE0F00E518EE /* SpeedListModel.swift in Sources */,
-				32181C0F21955446009290A9 /* ElementaryTableViewController.swift in Sources */,
-				3218E10821D7493600916728 /* OneValueViewController.swift in Sources */,
-				3239038921B0EB3F00E518EE /* CellModel.swift in Sources */,
-				3239039121B0EDE600E518EE /* VolumeListModel.swift in Sources */,
-				3239039321B0EDFA00E518EE /* CircleListModel.swift in Sources */,
-				3239039721B0EE3800E518EE /* AverageListModel.swift in Sources */,
-				3239038D21B0ECBA00E518EE /* FourListModel.swift in Sources */,
-				32B3AE9B21940F2700C14C20 /* ViewController.swift in Sources */,
-				3239038F21B0EDCD00E518EE /* AreaListModel.swift in Sources */,
-				3239038B21B0EC0100E518EE /* ElementaryModel.swift in Sources */,
 				32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */,
-				3218E11E21D866C800916728 /* ThreeValueViewController.swift in Sources */,
-				32181C44219983ED009290A9 /* TwoValueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		32B3AE9C21940F2700C14C20 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32B3AE9D21940F2700C14C20 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
