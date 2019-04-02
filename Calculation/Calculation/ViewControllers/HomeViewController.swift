@@ -12,11 +12,18 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var contentView: UIView!
+    
+    var formulaTableView: FormulaTableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupScrollView()
+        
+        print(contentView.frame)
+        formulaTableView = FormulaTableView(frame: CGRect(x: 0, y: contentView.frame.minY/2, width: contentView.frame.size.width, height: contentView.frame.size.height))
+        self.view.addSubview(formulaTableView!)
         // Do any additional setup after loading the view.
     }
     

@@ -63,7 +63,7 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuh-eh-Sm0">
                                 <rect key="frame" x="0.0" y="102.5" width="319" height="320.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gl7-yK-zOa">
                                 <rect key="frame" x="168" y="610" width="39" height="37"/>
@@ -97,6 +97,7 @@
                         <viewLayoutGuide key="safeArea" id="ERg-Ay-VBK"/>
                     </view>
                     <connections>
+                        <outlet property="contentView" destination="yuh-eh-Sm0" id="QnK-BM-Uzy"/>
                         <outlet property="pageControl" destination="gl7-yK-zOa" id="9i3-Mx-XXk"/>
                         <outlet property="scrollView" destination="xda-bY-xZY" id="FBO-5Z-bV7"/>
                     </connections>
