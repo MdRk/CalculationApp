@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ycu-UY-XDz">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,75 @@
             <objects>
                 <viewController id="Ycu-UY-XDz" customClass="HomeViewController" customModule="Calculation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aWL-Pg-KYU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLc-YI-b9P">
+                                <rect key="frame" x="0.0" y="20" width="375" height="64.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kid-Uq-79J">
+                                        <rect key="frame" x="158.5" y="3" width="58" height="58.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kid-Uq-79J" secondAttribute="height" multiplier="1:1" id="AdL-ly-Z7V"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8x-XD-Zwh">
+                                        <rect key="frame" x="8" y="9.5" width="45.5" height="45.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="r8x-XD-Zwh" secondAttribute="height" multiplier="1:1" id="J4L-03-NLA"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="r8x-XD-Zwh" firstAttribute="centerY" secondItem="KLc-YI-b9P" secondAttribute="centerY" id="5FI-wl-pk5"/>
+                                    <constraint firstItem="kid-Uq-79J" firstAttribute="centerY" secondItem="KLc-YI-b9P" secondAttribute="centerY" id="5jg-yr-Ll1"/>
+                                    <constraint firstItem="r8x-XD-Zwh" firstAttribute="leading" secondItem="KLc-YI-b9P" secondAttribute="leading" constant="8" id="S71-lf-g29"/>
+                                    <constraint firstItem="r8x-XD-Zwh" firstAttribute="height" secondItem="KLc-YI-b9P" secondAttribute="height" multiplier="0.7" id="Vpo-uO-Sga"/>
+                                    <constraint firstItem="kid-Uq-79J" firstAttribute="height" secondItem="KLc-YI-b9P" secondAttribute="height" multiplier="0.9" id="q4O-u3-bf3"/>
+                                    <constraint firstItem="kid-Uq-79J" firstAttribute="centerX" secondItem="KLc-YI-b9P" secondAttribute="centerX" id="usq-hb-MD3"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xda-bY-xZY">
+                                <rect key="frame" x="37.5" y="460.5" width="300" height="206.5"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PiA-7A-zCb">
+                                <rect key="frame" x="0.0" y="84.5" width="375" height="356"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gl7-yK-zOa">
+                                <rect key="frame" x="168" y="610" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xda-bY-xZY" secondAttribute="bottom" id="0j6-AV-atx"/>
+                            <constraint firstItem="PiA-7A-zCb" firstAttribute="height" secondItem="ERg-Ay-VBK" secondAttribute="height" multiplier="0.55" id="43u-MJ-0nz"/>
+                            <constraint firstItem="PiA-7A-zCb" firstAttribute="trailing" secondItem="ERg-Ay-VBK" secondAttribute="trailing" id="6Nj-My-Pcy"/>
+                            <constraint firstItem="KLc-YI-b9P" firstAttribute="trailing" secondItem="ERg-Ay-VBK" secondAttribute="trailing" id="7Ol-lr-BB3"/>
+                            <constraint firstItem="xda-bY-xZY" firstAttribute="top" secondItem="PiA-7A-zCb" secondAttribute="bottom" constant="20" id="BPf-V0-46q"/>
+                            <constraint firstItem="gl7-yK-zOa" firstAttribute="centerX" secondItem="aWL-Pg-KYU" secondAttribute="centerX" id="Qlu-yt-REe"/>
+                            <constraint firstItem="ERg-Ay-VBK" firstAttribute="bottom" secondItem="gl7-yK-zOa" secondAttribute="bottom" constant="20" id="SMz-Vr-XG2"/>
+                            <constraint firstItem="KLc-YI-b9P" firstAttribute="height" secondItem="ERg-Ay-VBK" secondAttribute="height" multiplier="0.1" id="TbZ-St-7wB"/>
+                            <constraint firstItem="xda-bY-xZY" firstAttribute="centerX" secondItem="aWL-Pg-KYU" secondAttribute="centerX" id="Wxf-rJ-Ugb"/>
+                            <constraint firstItem="KLc-YI-b9P" firstAttribute="top" secondItem="ERg-Ay-VBK" secondAttribute="top" id="XMx-Ro-IQt"/>
+                            <constraint firstItem="PiA-7A-zCb" firstAttribute="top" secondItem="KLc-YI-b9P" secondAttribute="bottom" id="e5X-3v-Fvy"/>
+                            <constraint firstItem="xda-bY-xZY" firstAttribute="width" secondItem="ERg-Ay-VBK" secondAttribute="width" multiplier="0.8" id="fUk-y9-EzE"/>
+                            <constraint firstItem="PiA-7A-zCb" firstAttribute="leading" secondItem="ERg-Ay-VBK" secondAttribute="leading" id="m4D-GQ-fL8"/>
+                            <constraint firstItem="KLc-YI-b9P" firstAttribute="leading" secondItem="ERg-Ay-VBK" secondAttribute="leading" id="wUj-Wa-LHo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ERg-Ay-VBK"/>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="gl7-yK-zOa" id="9i3-Mx-XXk"/>
+                        <outlet property="scrollView" destination="xda-bY-xZY" id="FBO-5Z-bV7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FII-4C-rSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="192.75362318840581" y="14.732142857142856"/>
         </scene>
     </scenes>
 </document>
