@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		324C571521E445D70068A242 /* CalculationModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C571421E445D70068A242 /* CalculationModelTest.swift */; };
+		324FB0D9225360D400139945 /* FormulaTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324FB0D8225360D400139945 /* FormulaTableView.xib */; };
+		324FB0DB225361A600139945 /* FormulaTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324FB0DA225361A600139945 /* FormulaTableView.swift */; };
+		324FB0E1225394B700139945 /* FormulaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324FB0DF225394B700139945 /* FormulaTableViewCell.swift */; };
+		324FB0E2225394B700139945 /* FormulaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324FB0E0225394B700139945 /* FormulaTableViewCell.xib */; };
+		324FB0E52253AB3B00139945 /* FormulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324FB0E42253AB3B00139945 /* FormulaModel.swift */; };
 		32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AE9821940F2700C14C20 /* AppDelegate.swift */; };
 		32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AE9F21940F2900C14C20 /* Assets.xcassets */; };
 		32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */; };
@@ -36,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		324C571421E445D70068A242 /* CalculationModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModelTest.swift; sourceTree = "<group>"; };
+		324FB0D8225360D400139945 /* FormulaTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormulaTableView.xib; sourceTree = "<group>"; };
+		324FB0DA225361A600139945 /* FormulaTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaTableView.swift; sourceTree = "<group>"; };
+		324FB0DF225394B700139945 /* FormulaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaTableViewCell.swift; sourceTree = "<group>"; };
+		324FB0E0225394B700139945 /* FormulaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormulaTableViewCell.xib; sourceTree = "<group>"; };
+		324FB0E42253AB3B00139945 /* FormulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaModel.swift; sourceTree = "<group>"; };
 		32B3AE9521940F2700C14C20 /* Calculation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3AE9821940F2700C14C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B3AE9F21940F2900C14C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,20 +86,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32181C3F2199807A009290A9 /* ViewController */ = {
+		32181C3F2199807A009290A9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				32D2D36822522E1F00D4402A /* HomeViewController.swift */,
 			);
-			path = ViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		32181C4021998084009290A9 /* Storyboard */ = {
+		32181C4021998084009290A9 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				32D2D36622522E1100D4402A /* HomeVC.storyboard */,
 			);
-			path = Storyboard;
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		324FB0D72253608500139945 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				324FB0DA225361A600139945 /* FormulaTableView.swift */,
+				324FB0D8225360D400139945 /* FormulaTableView.xib */,
+				324FB0DC2253940800139945 /* Custom cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		324FB0DC2253940800139945 /* Custom cells */ = {
+			isa = PBXGroup;
+			children = (
+				324FB0DF225394B700139945 /* FormulaTableViewCell.swift */,
+				324FB0E0225394B700139945 /* FormulaTableViewCell.xib */,
+			);
+			path = "Custom cells";
+			sourceTree = "<group>";
+		};
+		324FB0E32253AB1000139945 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				324FB0E42253AB3B00139945 /* FormulaModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		32B3AE8C21940F2700C14C20 = {
@@ -116,8 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				32B3AE9821940F2700C14C20 /* AppDelegate.swift */,
-				32181C3F2199807A009290A9 /* ViewController */,
-				32181C4021998084009290A9 /* Storyboard */,
+				324FB0E32253AB1000139945 /* Model */,
+				324FB0D72253608500139945 /* Views */,
+				32181C3F2199807A009290A9 /* ViewControllers */,
+				32181C4021998084009290A9 /* Storyboards */,
 				32B3AE9F21940F2900C14C20 /* Assets.xcassets */,
 				32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */,
 				32B3AEA421940F2900C14C20 /* Info.plist */,
@@ -250,6 +289,8 @@
 			files = (
 				32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */,
 				32D2D36722522E1100D4402A /* HomeVC.storyboard in Resources */,
+				324FB0E2225394B700139945 /* FormulaTableViewCell.xib in Resources */,
+				324FB0D9225360D400139945 /* FormulaTableView.xib in Resources */,
 				32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324FB0E52253AB3B00139945 /* FormulaModel.swift in Sources */,
 				32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */,
+				324FB0DB225361A600139945 /* FormulaTableView.swift in Sources */,
+				324FB0E1225394B700139945 /* FormulaTableViewCell.swift in Sources */,
 				32D2D36922522E1F00D4402A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

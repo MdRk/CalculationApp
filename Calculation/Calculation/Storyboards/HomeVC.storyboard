@@ -52,7 +52,19 @@
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PiA-7A-zCb">
                                 <rect key="frame" x="0.0" y="84.5" width="375" height="356"/>
+                                <color key="backgroundColor" red="0.065715390994806125" green="0.43510072969543145" blue="0.072699296694152246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzq-ZI-tLq">
+                                <rect key="frame" x="342.5" y="102.5" width="32.5" height="320.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuh-eh-Sm0">
+                                <rect key="frame" x="0.0" y="102.5" width="337.5" height="320.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gl7-yK-zOa">
                                 <rect key="frame" x="168" y="610" width="39" height="37"/>
                             </pageControl>
@@ -61,14 +73,22 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="xda-bY-xZY" secondAttribute="bottom" id="0j6-AV-atx"/>
                             <constraint firstItem="PiA-7A-zCb" firstAttribute="height" secondItem="ERg-Ay-VBK" secondAttribute="height" multiplier="0.55" id="43u-MJ-0nz"/>
+                            <constraint firstItem="yuh-eh-Sm0" firstAttribute="height" secondItem="PiA-7A-zCb" secondAttribute="height" multiplier="0.9" id="4Uz-da-pmh"/>
                             <constraint firstItem="PiA-7A-zCb" firstAttribute="trailing" secondItem="ERg-Ay-VBK" secondAttribute="trailing" id="6Nj-My-Pcy"/>
+                            <constraint firstItem="Yzq-ZI-tLq" firstAttribute="centerY" secondItem="yuh-eh-Sm0" secondAttribute="centerY" id="6QD-kj-Oku"/>
                             <constraint firstItem="KLc-YI-b9P" firstAttribute="trailing" secondItem="ERg-Ay-VBK" secondAttribute="trailing" id="7Ol-lr-BB3"/>
+                            <constraint firstItem="Yzq-ZI-tLq" firstAttribute="height" secondItem="yuh-eh-Sm0" secondAttribute="height" id="7Xe-nw-MLz"/>
+                            <constraint firstItem="yuh-eh-Sm0" firstAttribute="centerY" secondItem="PiA-7A-zCb" secondAttribute="centerY" id="8TP-aw-exP"/>
+                            <constraint firstItem="yuh-eh-Sm0" firstAttribute="width" secondItem="PiA-7A-zCb" secondAttribute="width" multiplier="0.9" id="ArD-Aq-f65"/>
                             <constraint firstItem="xda-bY-xZY" firstAttribute="top" secondItem="PiA-7A-zCb" secondAttribute="bottom" constant="20" id="BPf-V0-46q"/>
+                            <constraint firstItem="ERg-Ay-VBK" firstAttribute="trailing" secondItem="Yzq-ZI-tLq" secondAttribute="trailing" id="JMH-ly-Ujh"/>
+                            <constraint firstItem="Yzq-ZI-tLq" firstAttribute="leading" secondItem="yuh-eh-Sm0" secondAttribute="trailing" constant="5" id="Lh6-PN-IyR"/>
                             <constraint firstItem="gl7-yK-zOa" firstAttribute="centerX" secondItem="aWL-Pg-KYU" secondAttribute="centerX" id="Qlu-yt-REe"/>
                             <constraint firstItem="ERg-Ay-VBK" firstAttribute="bottom" secondItem="gl7-yK-zOa" secondAttribute="bottom" constant="20" id="SMz-Vr-XG2"/>
                             <constraint firstItem="KLc-YI-b9P" firstAttribute="height" secondItem="ERg-Ay-VBK" secondAttribute="height" multiplier="0.1" id="TbZ-St-7wB"/>
                             <constraint firstItem="xda-bY-xZY" firstAttribute="centerX" secondItem="aWL-Pg-KYU" secondAttribute="centerX" id="Wxf-rJ-Ugb"/>
                             <constraint firstItem="KLc-YI-b9P" firstAttribute="top" secondItem="ERg-Ay-VBK" secondAttribute="top" id="XMx-Ro-IQt"/>
+                            <constraint firstItem="yuh-eh-Sm0" firstAttribute="leading" secondItem="ERg-Ay-VBK" secondAttribute="leading" id="YGn-UY-4es"/>
                             <constraint firstItem="PiA-7A-zCb" firstAttribute="top" secondItem="KLc-YI-b9P" secondAttribute="bottom" id="e5X-3v-Fvy"/>
                             <constraint firstItem="xda-bY-xZY" firstAttribute="width" secondItem="ERg-Ay-VBK" secondAttribute="width" multiplier="0.8" id="fUk-y9-EzE"/>
                             <constraint firstItem="PiA-7A-zCb" firstAttribute="leading" secondItem="ERg-Ay-VBK" secondAttribute="leading" id="m4D-GQ-fL8"/>
@@ -77,13 +97,14 @@
                         <viewLayoutGuide key="safeArea" id="ERg-Ay-VBK"/>
                     </view>
                     <connections>
+                        <outlet property="contentView" destination="yuh-eh-Sm0" id="QnK-BM-Uzy"/>
                         <outlet property="pageControl" destination="gl7-yK-zOa" id="9i3-Mx-XXk"/>
                         <outlet property="scrollView" destination="xda-bY-xZY" id="FBO-5Z-bV7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FII-4C-rSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192.75362318840581" y="14.732142857142856"/>
+            <point key="canvasLocation" x="191.19999999999999" y="13.943028485757123"/>
         </scene>
     </scenes>
 </document>
