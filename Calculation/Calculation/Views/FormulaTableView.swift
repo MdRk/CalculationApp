@@ -41,6 +41,9 @@ class FormulaTableView: UIView {
         formulaTableView.delegate = self
         formulaTableView.dataSource = self
         
+        // 垂直方向のスクロールインジケータを非表示にする
+        formulaTableView.showsVerticalScrollIndicator = false
+        
         let nib = UINib(nibName: "FormulaTableViewCell", bundle: nil)
         formulaTableView.register(nib, forCellReuseIdentifier: "FormulaTableViewCell")
     }
@@ -48,12 +51,12 @@ class FormulaTableView: UIView {
 
 extension FormulaTableView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return formulaModel.numCalculation.count
+        return formulaModel.numCalculations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.formulaTableView.dequeueReusableCell(withIdentifier: "FormulaTableViewCell", for: indexPath) as! FormulaTableViewCell
-        cell.formulaLabel.text = formulaModel.numCalculation[indexPath.row]
+        cell.formulaLabel.text = formulaModel.numCalculations[indexPath.row]
         return cell
     }
 }
