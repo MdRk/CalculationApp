@@ -14,6 +14,8 @@ class FormulaTableView: UIView {
     
     let formulaModel = FormulaModel()
     
+    var displayItems: [String] = []
+    
     var delegate: FormulaTableView?
     
     override func awakeFromNib() {
@@ -28,6 +30,7 @@ class FormulaTableView: UIView {
         let view = Bundle.main.loadNibNamed("FormulaTableView", owner: self, options: nil)?.first as! UIView
         view.frame = frame
         addSubview(view)
+        
         initTableView()
     }
     
@@ -46,17 +49,20 @@ class FormulaTableView: UIView {
         
         let nib = UINib(nibName: "FormulaTableViewCell", bundle: nil)
         formulaTableView.register(nib, forCellReuseIdentifier: "FormulaTableViewCell")
+        
+        // tableViewの中身を初期化
+        displayItems = formulaModel.numCalculations
     }
 }
 
 extension FormulaTableView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return formulaModel.numCalculations.count
+        return displayItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.formulaTableView.dequeueReusableCell(withIdentifier: "FormulaTableViewCell", for: indexPath) as! FormulaTableViewCell
-        cell.formulaLabel.text = formulaModel.numCalculations[indexPath.row]
+        cell.formulaLabel.text = displayItems[indexPath.row]
         return cell
     }
 }
