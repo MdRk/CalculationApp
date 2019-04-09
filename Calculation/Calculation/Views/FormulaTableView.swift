@@ -28,7 +28,7 @@ class FormulaTableView: UIView {
         super.init(frame: frame)
         
         let view = Bundle.main.loadNibNamed("FormulaTableView", owner: self, options: nil)?.first as! UIView
-        view.frame = frame
+        view.frame = self.bounds
         addSubview(view)
         
         initTableView()

@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
         setupScrollView()
         
         print(contentView.frame)
-        formulaTableView = FormulaTableView(frame: CGRect(x: 0, y: contentView.frame.minY/2, width: contentView.frame.size.width, height: contentView.frame.size.height))
+        formulaTableView = FormulaTableView(frame: CGRect(x: 0, y: contentView.frame.minY, width: contentView.frame.size.width, height: contentView.frame.size.height))
         self.view.addSubview(formulaTableView!)
     }
     
