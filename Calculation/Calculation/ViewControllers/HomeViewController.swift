@@ -24,7 +24,6 @@ class HomeViewController: UIViewController {
         print(contentView.frame)
         formulaTableView = FormulaTableView(frame: CGRect(x: 0, y: contentView.frame.minY/2, width: contentView.frame.size.width, height: contentView.frame.size.height))
         self.view.addSubview(formulaTableView!)
-        // Do any additional setup after loading the view.
     }
     
     func setupScrollView() {
@@ -75,5 +74,7 @@ extension HomeViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         pageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.frame.size.width)
         print(pageControl.currentPage)
+        formulaTableView?.displayItems = FormulaModel().allFormulas![pageControl.currentPage]
+        formulaTableView?.formulaTableView.reloadData()
     }
 }
