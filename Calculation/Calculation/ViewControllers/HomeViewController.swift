@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     
     var formulaTableView: FormulaTableView?
+    var formulaAnswerView: FormulaAnswerView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class HomeViewController: UIViewController {
         setupScrollView()
         
         print(contentView.frame)
+        
         formulaTableView = FormulaTableView(frame: CGRect(x: 0, y: contentView.frame.minY, width: contentView.frame.size.width, height: contentView.frame.size.height))
         self.view.addSubview(formulaTableView!)
     }
