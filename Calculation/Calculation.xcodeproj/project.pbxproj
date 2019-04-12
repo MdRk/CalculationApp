@@ -8,20 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		324C571521E445D70068A242 /* CalculationModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C571421E445D70068A242 /* CalculationModelTest.swift */; };
-		324FB0D9225360D400139945 /* FormulaTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324FB0D8225360D400139945 /* FormulaTableView.xib */; };
-		324FB0DB225361A600139945 /* FormulaTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324FB0DA225361A600139945 /* FormulaTableView.swift */; };
-		324FB0E1225394B700139945 /* FormulaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324FB0DF225394B700139945 /* FormulaTableViewCell.swift */; };
-		324FB0E2225394B700139945 /* FormulaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324FB0E0225394B700139945 /* FormulaTableViewCell.xib */; };
 		324FB0E52253AB3B00139945 /* FormulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324FB0E42253AB3B00139945 /* FormulaModel.swift */; };
 		32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AE9821940F2700C14C20 /* AppDelegate.swift */; };
 		32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AE9F21940F2900C14C20 /* Assets.xcassets */; };
 		32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */; };
 		32B3AEAE21940F2900C14C20 /* CalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AEAD21940F2900C14C20 /* CalculationTests.swift */; };
 		32B3AEB921940F2900C14C20 /* CalculationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AEB821940F2900C14C20 /* CalculationUITests.swift */; };
-		32C43818225DA37200810DA4 /* FormulaAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C43817225DA37200810DA4 /* FormulaAnswerView.swift */; };
-		32C4381A225DA38600810DA4 /* FormulaAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C43819225DA38600810DA4 /* FormulaAnswerView.xib */; };
-		32D2D36722522E1100D4402A /* HomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2D36622522E1100D4402A /* HomeVC.storyboard */; };
-		32D2D36922522E1F00D4402A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2D36822522E1F00D4402A /* HomeViewController.swift */; };
+		32BE30A622603257001A7332 /* HomeTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BE30A522603257001A7332 /* HomeTableVC.storyboard */; };
+		32BE30A82260326B001A7332 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30A72260326B001A7332 /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +37,6 @@
 
 /* Begin PBXFileReference section */
 		324C571421E445D70068A242 /* CalculationModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModelTest.swift; sourceTree = "<group>"; };
-		324FB0D8225360D400139945 /* FormulaTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormulaTableView.xib; sourceTree = "<group>"; };
-		324FB0DA225361A600139945 /* FormulaTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaTableView.swift; sourceTree = "<group>"; };
-		324FB0DF225394B700139945 /* FormulaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaTableViewCell.swift; sourceTree = "<group>"; };
-		324FB0E0225394B700139945 /* FormulaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormulaTableViewCell.xib; sourceTree = "<group>"; };
 		324FB0E42253AB3B00139945 /* FormulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaModel.swift; sourceTree = "<group>"; };
 		32B3AE9521940F2700C14C20 /* Calculation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3AE9821940F2700C14C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +49,8 @@
 		32B3AEB421940F2900C14C20 /* CalculationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3AEB821940F2900C14C20 /* CalculationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationUITests.swift; sourceTree = "<group>"; };
 		32B3AEBA21940F2900C14C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32C43817225DA37200810DA4 /* FormulaAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaAnswerView.swift; sourceTree = "<group>"; };
-		32C43819225DA38600810DA4 /* FormulaAnswerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormulaAnswerView.xib; sourceTree = "<group>"; };
-		32D2D36622522E1100D4402A /* HomeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeVC.storyboard; sourceTree = "<group>"; };
-		32D2D36822522E1F00D4402A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		32BE30A522603257001A7332 /* HomeTableVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTableVC.storyboard; sourceTree = "<group>"; };
+		32BE30A72260326B001A7332 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +81,7 @@
 		32181C3F2199807A009290A9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				32D2D36822522E1F00D4402A /* HomeViewController.swift */,
+				32BE30A72260326B001A7332 /* HomeTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -101,7 +89,7 @@
 		32181C4021998084009290A9 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				32D2D36622522E1100D4402A /* HomeVC.storyboard */,
+				32BE30A522603257001A7332 /* HomeTableVC.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -109,22 +97,8 @@
 		324FB0D72253608500139945 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				324FB0DA225361A600139945 /* FormulaTableView.swift */,
-				324FB0D8225360D400139945 /* FormulaTableView.xib */,
-				32C43817225DA37200810DA4 /* FormulaAnswerView.swift */,
-				32C43819225DA38600810DA4 /* FormulaAnswerView.xib */,
-				324FB0DC2253940800139945 /* Custom cells */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		324FB0DC2253940800139945 /* Custom cells */ = {
-			isa = PBXGroup;
-			children = (
-				324FB0DF225394B700139945 /* FormulaTableViewCell.swift */,
-				324FB0E0225394B700139945 /* FormulaTableViewCell.xib */,
-			);
-			path = "Custom cells";
 			sourceTree = "<group>";
 		};
 		324FB0E32253AB1000139945 /* Model */ = {
@@ -294,11 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */,
-				32D2D36722522E1100D4402A /* HomeVC.storyboard in Resources */,
-				324FB0E2225394B700139945 /* FormulaTableViewCell.xib in Resources */,
-				324FB0D9225360D400139945 /* FormulaTableView.xib in Resources */,
 				32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */,
-				32C4381A225DA38600810DA4 /* FormulaAnswerView.xib in Resources */,
+				32BE30A622603257001A7332 /* HomeTableVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,12 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BE30A82260326B001A7332 /* HomeTableViewController.swift in Sources */,
 				324FB0E52253AB3B00139945 /* FormulaModel.swift in Sources */,
 				32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */,
-				324FB0DB225361A600139945 /* FormulaTableView.swift in Sources */,
-				32C43818225DA37200810DA4 /* FormulaAnswerView.swift in Sources */,
-				324FB0E1225394B700139945 /* FormulaTableViewCell.swift in Sources */,
-				32D2D36922522E1F00D4402A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
