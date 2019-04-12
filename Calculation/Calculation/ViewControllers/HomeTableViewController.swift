@@ -13,6 +13,7 @@ class HomeTableViewController: UIViewController {
     @IBOutlet weak var formulaTableView: UITableView!
     
     let formulaModel = FormulaModel()
+    var nextViewTitle = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,12 @@ class HomeTableViewController: UIViewController {
         formulaTableView.dataSource = self
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toCalculationVC" {
+            let nextVC = segue.destination as! CalculationViewController
+            nextVC.navigationItem.title = nextViewTitle
+        }
+    }
 }
 
 extension HomeTableViewController: UITableViewDataSource {
@@ -43,6 +50,15 @@ extension HomeTableViewController: UITableViewDataSource {
         cell.textLabel?.text = formulaModel.allFormulas![indexPath.section][indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        formulaTableView.deselectRow(at: indexPath, animated: true)
+        
+        self.nextViewTitle = formulaModel.allFormulas![indexPath.section][indexPath.row]
+        if !(indexPath.section == 6 && indexPath.row >= 7) {
+            self.performSegue(withIdentifier: "toCalculationVC", sender: nil)
+        }
     }
 }
 
