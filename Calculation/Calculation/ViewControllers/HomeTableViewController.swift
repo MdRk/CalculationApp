@@ -20,6 +20,10 @@ class HomeTableViewController: UIViewController {
 
         formulaTableView.delegate = self
         formulaTableView.dataSource = self
+        
+        // テスト用
+        let numCalculation = NumCalculationModel()
+        print(numCalculation.divisorQuantity(num1: 360))
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
