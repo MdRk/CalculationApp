@@ -18,6 +18,13 @@
 		32BE30A82260326B001A7332 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30A72260326B001A7332 /* HomeTableViewController.swift */; };
 		32BE30AA22604137001A7332 /* CalculationVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BE30A922604137001A7332 /* CalculationVC.storyboard */; };
 		32BE30AC22604149001A7332 /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30AB22604149001A7332 /* CalculationViewController.swift */; };
+		32BE30AE2260766F001A7332 /* NumCalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30AD2260766F001A7332 /* NumCalculationModel.swift */; };
+		32BE30B022607E69001A7332 /* AreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30AF22607E69001A7332 /* AreaModel.swift */; };
+		32BE30B222607F6D001A7332 /* VolumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30B122607F6D001A7332 /* VolumeModel.swift */; };
+		32BE30B422607FF7001A7332 /* ShapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30B322607FF7001A7332 /* ShapeModel.swift */; };
+		32BE30B6226080AD001A7332 /* UnitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30B5226080AD001A7332 /* UnitModel.swift */; };
+		32BE30B8226083D2001A7332 /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30B7226083D2001A7332 /* StatisticsModel.swift */; };
+		32BE30BA22608452001A7332 /* CommerceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30B922608452001A7332 /* CommerceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,13 @@
 		32BE30A72260326B001A7332 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		32BE30A922604137001A7332 /* CalculationVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalculationVC.storyboard; sourceTree = "<group>"; };
 		32BE30AB22604149001A7332 /* CalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
+		32BE30AD2260766F001A7332 /* NumCalculationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumCalculationModel.swift; sourceTree = "<group>"; };
+		32BE30AF22607E69001A7332 /* AreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaModel.swift; sourceTree = "<group>"; };
+		32BE30B122607F6D001A7332 /* VolumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeModel.swift; sourceTree = "<group>"; };
+		32BE30B322607FF7001A7332 /* ShapeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeModel.swift; sourceTree = "<group>"; };
+		32BE30B5226080AD001A7332 /* UnitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitModel.swift; sourceTree = "<group>"; };
+		32BE30B7226083D2001A7332 /* StatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
+		32BE30B922608452001A7332 /* CommerceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +114,19 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		324FB0E32253AB1000139945 /* Model */ = {
+		324FB0E32253AB1000139945 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				324FB0E42253AB3B00139945 /* FormulaModel.swift */,
+				32BE30AD2260766F001A7332 /* NumCalculationModel.swift */,
+				32BE30AF22607E69001A7332 /* AreaModel.swift */,
+				32BE30B122607F6D001A7332 /* VolumeModel.swift */,
+				32BE30B322607FF7001A7332 /* ShapeModel.swift */,
+				32BE30B5226080AD001A7332 /* UnitModel.swift */,
+				32BE30B7226083D2001A7332 /* StatisticsModel.swift */,
+				32BE30B922608452001A7332 /* CommerceModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		32B3AE8C21940F2700C14C20 = {
@@ -132,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				32B3AE9821940F2700C14C20 /* AppDelegate.swift */,
-				324FB0E32253AB1000139945 /* Model */,
+				324FB0E32253AB1000139945 /* Models */,
 				32181C3F2199807A009290A9 /* ViewControllers */,
 				32181C4021998084009290A9 /* Storyboards */,
 				32B3AE9F21940F2900C14C20 /* Assets.xcassets */,
@@ -293,9 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BE30BA22608452001A7332 /* CommerceModel.swift in Sources */,
+				32BE30B022607E69001A7332 /* AreaModel.swift in Sources */,
 				32BE30AC22604149001A7332 /* CalculationViewController.swift in Sources */,
+				32BE30AE2260766F001A7332 /* NumCalculationModel.swift in Sources */,
 				32BE30A82260326B001A7332 /* HomeTableViewController.swift in Sources */,
+				32BE30B6226080AD001A7332 /* UnitModel.swift in Sources */,
+				32BE30B222607F6D001A7332 /* VolumeModel.swift in Sources */,
+				32BE30B422607FF7001A7332 /* ShapeModel.swift in Sources */,
 				324FB0E52253AB3B00139945 /* FormulaModel.swift in Sources */,
+				32BE30B8226083D2001A7332 /* StatisticsModel.swift in Sources */,
 				32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
