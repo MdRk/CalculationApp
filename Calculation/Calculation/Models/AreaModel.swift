@@ -60,22 +60,22 @@ class AreaModel {
         return sqrt(3) * (side * side)
     }
     
-    // 正六面体
+    // 正六面体（マイナスはエラー）
     func hexahedron(side: Double) -> Double {
         return 6 * (side * side)
     }
     
-    // 正八面体
+    // 正八面体（マイナスはエラー）
     func octahedron(side: Double) -> Double {
         return 2 * sqrt(3) * (side * side)
     }
     
-    // 正十二面体
+    // 正十二面体（マイナスはエラー）
     func dodecahedron(side: Double) -> Double {
         return 3 * sqrt(25 + (10 * sqrt(5))) * (side * side)
     }
     
-    // 正二十面体
+    // 正二十面体（マイナスはエラー）
     func icosahedron(side: Double) -> Double {
         return 5 * sqrt(3) * (side * side)
     }
