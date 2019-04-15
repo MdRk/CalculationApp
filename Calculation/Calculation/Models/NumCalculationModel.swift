@@ -16,10 +16,10 @@ class NumCalculationModel {
         
         if num1 == 0 {
             return String(0)
-        }
-        if num2 == 0 {
+        } else if num2 == 0 {
             return String(1)
         }
+        
         for _ in 1...num2 {
             answer *= num1
         }

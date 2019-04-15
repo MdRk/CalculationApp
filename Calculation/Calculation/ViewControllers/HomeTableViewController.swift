@@ -20,10 +20,6 @@ class HomeTableViewController: UIViewController {
 
         formulaTableView.delegate = self
         formulaTableView.dataSource = self
-        
-        // テスト用
-        let numCalculation = NumCalculationModel()
-        print(numCalculation.divisorQuantity(num1: 360))
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -55,7 +51,9 @@ extension HomeTableViewController: UITableViewDataSource {
         
         return cell
     }
-    
+}
+
+extension HomeTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         formulaTableView.deselectRow(at: indexPath, animated: true)
         
@@ -64,8 +62,4 @@ extension HomeTableViewController: UITableViewDataSource {
             self.performSegue(withIdentifier: "toCalculationVC", sender: nil)
         }
     }
-}
-
-extension HomeTableViewController: UITableViewDelegate {
-    
 }
