@@ -10,41 +10,38 @@ import Foundation
 
 class UnitModel {
     
-    // t
+    // km³->m³
+    func billion(x: Double) -> Double {
+        return x * 1000000000
+    }
     
-    // kg
+    //km²->m², m³->cm³
+    func million(x: Double) -> Double {
+        return x * 1000000
+    }
     
-    // g
+    // m²->cm², ha->m²
+    func tThousand(x: Double) -> Double {
+        return x * 10000
+    }
     
-    // km
+    // t->kg, kg->g, g->mg, km->m, cm³->mm³, kL->L
+    func thousand(x: Double) -> Double {
+        return x * 1000
+    }
     
-    // m
+    // m->cm, cm²->mm², a->m², dL->mL
+    func hundred(x: Double) -> Double {
+        return x * 100
+    }
     
-    //cm
-    
-    //km²
-    
-    // m²
-    
-    // cm²
-    
-    // ha
-    
-    // a
-    
-    // km³
-    
-    // m³
-    
-    // cm³
-    
-    // kL
-    
-    // L
-    
-    // dL
-    
-    // mL
+    // cm->mm, L->dL
+    func ten(x: Double) -> Double {
+        return x * 10
+    }
     
     // ダース
+    func dozen(x: Double) -> Double {
+        return x * 12
+    }
 }
