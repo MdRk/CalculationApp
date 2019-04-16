@@ -27,7 +27,7 @@ class AreaModel {
     
     // 円 （マイナスはエラー）
     func circle(radius1: Double, radius2: Double) -> Double {
-        return radius1 * radius2 * 3.14
+        return radius1 * radius2 * Double.pi
     }
     
     // 立方体 （マイナスはエラー）
@@ -42,17 +42,17 @@ class AreaModel {
     
     // 円柱 （マイナスはエラー）
     func cylinder(radius: Double, height: Double) -> Double {
-        return (2 * 3.14 * radius * radius) + (2 * 3.14 * radius * height)
+        return (2 * Double.pi * radius * radius) + (2 * Double.pi * radius * height)
     }
     
     // 円錐（マイナスはエラー）
     func cone(radius: Double, height: Double) -> Double {
-        return (3.14 * radius * radius) + (3.14 * radius * sqrt((radius * radius) + (height * height)))
+        return (Double.pi * radius * radius) + (Double.pi * radius * sqrt((radius * radius) + (height * height)))
     }
     
     // 球（マイナスはエラー）
     func ball(radius: Double) -> Double {
-        return 4 * 3.14 * (radius * radius)
+        return 4 * Double.pi * (radius * radius)
     }
     
     // 正四面体（マイナスはエラー）
