@@ -11,72 +11,72 @@ import Foundation
 class AreaModel {
     
     // 正方形と長方形と平行四辺形 （マイナスはエラー）
-    func rect(height: Double, width: Double) -> Double {
+    public func rect(height: Double, width: Double) -> Double {
         return height * width
     }
     
     // 三角形とひし形と扇形　（マイナスはエラー）
-    func triangle(bottom: Double, height: Double) -> Double {
+    public func triangle(bottom: Double, height: Double) -> Double {
         return bottom * height / 2
     }
     
     // 台形
-    func trapezoid(uBottom: Double, lBottom: Double, height: Double) -> Double {
+    public func trapezoid(uBottom: Double, lBottom: Double, height: Double) -> Double {
         return (uBottom + lBottom) * height / 2
     }
     
     // 円 （マイナスはエラー）
-    func circle(radius1: Double, radius2: Double) -> Double {
+    public func circle(radius1: Double, radius2: Double) -> Double {
         return radius1 * radius2 * Double.pi
     }
     
     // 立方体 （マイナスはエラー）
-    func cube(side1: Double) -> Double {
+    public func cube(side1: Double) -> Double {
         return side1 * side1 * 6
     }
     
     // 直方体 （マイナスはエラー）
-    func parall(vertical: Double, horizontal: Double, height: Double) -> Double {
+    public func parall(vertical: Double, horizontal: Double, height: Double) -> Double {
         return 2 * ((vertical*horizontal) + (vertical*height) + (horizontal*height))
     }
     
     // 円柱 （マイナスはエラー）
-    func cylinder(radius: Double, height: Double) -> Double {
+    public func cylinder(radius: Double, height: Double) -> Double {
         return (2 * Double.pi * radius * radius) + (2 * Double.pi * radius * height)
     }
     
     // 円錐（マイナスはエラー）
-    func cone(radius: Double, height: Double) -> Double {
+    public func cone(radius: Double, height: Double) -> Double {
         return (Double.pi * radius * radius) + (Double.pi * radius * sqrt((radius * radius) + (height * height)))
     }
     
     // 球（マイナスはエラー）
-    func ball(radius: Double) -> Double {
+    public func ball(radius: Double) -> Double {
         return 4 * Double.pi * (radius * radius)
     }
     
     // 正四面体（マイナスはエラー）
-    func tetrahedron(side: Double) -> Double {
+    public func tetrahedron(side: Double) -> Double {
         return sqrt(3) * (side * side)
     }
     
     // 正六面体（マイナスはエラー）
-    func hexahedron(side: Double) -> Double {
+    public func hexahedron(side: Double) -> Double {
         return 6 * (side * side)
     }
     
     // 正八面体（マイナスはエラー）
-    func octahedron(side: Double) -> Double {
+    public func octahedron(side: Double) -> Double {
         return 2 * sqrt(3) * (side * side)
     }
     
     // 正十二面体（マイナスはエラー）
-    func dodecahedron(side: Double) -> Double {
+    public func dodecahedron(side: Double) -> Double {
         return 3 * sqrt(25 + (10 * sqrt(5))) * (side * side)
     }
     
     // 正二十面体（マイナスはエラー）
-    func icosahedron(side: Double) -> Double {
+    public func icosahedron(side: Double) -> Double {
         return 5 * sqrt(3) * (side * side)
     }
     

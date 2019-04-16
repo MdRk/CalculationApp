@@ -11,7 +11,7 @@ import Foundation
 class NumCalculationModel {
     
     // 累乗　（num2がマイナスか小数でエラー）
-    func power(num1: Double, num2: Int) -> String {
+    public func power(num1: Double, num2: Int) -> String {
         var answer = 1.0
         
         if num1 == 0 {
@@ -27,22 +27,22 @@ class NumCalculationModel {
     }
     
     // 平方根（マイナスか小数でエラー）
-    func root(num1: Int) -> String {
+    public func root(num1: Int) -> String {
         return String(sqrt(Double(num1)))
     }
     
     // 三角数　（マイナスか小数でエラー）
-    func triNumber(num1: Int) -> String {
+    public func triNumber(num1: Int) -> String {
         return String((num1*(num1+1))/2)
     }
     
     // 四角数　（マイナスか小数でエラー）
-    func squareNumber(num1: Int) -> String {
+    public func squareNumber(num1: Int) -> String {
         return String(num1*num1)
     }
     
     // ガウス記号　
-    func gauss(num1: Double) -> String {
+    public func gauss(num1: Double) -> String {
         let difference = num1 - floor(num1)
         if num1 < 0 && difference != 0{
             return String(Int(num1-1))
@@ -51,18 +51,18 @@ class NumCalculationModel {
     }
     
     // 2進数 （小数はエラー）
-    func binary(num1: Int) -> String {
+    public func binary(num1: Int) -> String {
         let answer = String(num1, radix: 2)
         return answer
     }
     
     // 16進数 （小数はエラー）
-    func hexadecimal(num1: Int) -> String {
+    public func hexadecimal(num1: Int) -> String {
         return String(num1, radix: 16)
     }
     
     // 最大公約数 （マイナスと小数はエラー）
-    func GCD(num1: Int, num2: Int) -> String {
+    public func GCD(num1: Int, num2: Int) -> String {
         var num1 = num1
         var num2 = num2
         
@@ -83,12 +83,12 @@ class NumCalculationModel {
     }
     
     // 最小公倍数 （マイナスと小数はエラー）
-    func LCM(num1: Int, num2: Int) -> String {
+    public func LCM(num1: Int, num2: Int) -> String {
         return String((num1/Int(GCD(num1: num1, num2: num2))!) * num2)
     }
     
     // 約数の個数 （自然数のみ）
-    func divisorQuantity(num1: Int) -> String {
+    public func divisorQuantity(num1: Int) -> String {
         var num1 = num1
         var primeNum: [Int] = []
         var count = 0
@@ -111,7 +111,7 @@ class NumCalculationModel {
     }
     
     // 親和数 （自然数のみ）
-    func affinityNumber(num1: Int) -> String {
+    public func affinityNumber(num1: Int) -> String {
         var counts: [Int] = []
         
         for i in 1...num1-1 {
