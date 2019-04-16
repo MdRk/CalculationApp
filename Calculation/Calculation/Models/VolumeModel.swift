@@ -32,17 +32,17 @@ class VolumeModel {
     
     // 円錐（マイナスはエラー）
     func cone(radius: Double, height: Double) -> Double {
-        return (3.14 * (radius * radius) * height) / 3
+        return (Double.pi * (radius * radius) * height) / 3
     }
     
     // 円柱（マイナスはエラー）
     func cylinder(radius: Double, height: Double) -> Double {
-        return 3.14 * (radius * radius) * height
+        return Double.pi * (radius * radius) * height
     }
     
     // 球（マイナスはエラー）
     func ball(radius: Double) -> Double {
-        return (4 * 3.14 * (radius * radius * radius)) / 3
+        return (4 * Double.pi * (radius * radius * radius)) / 3
     }
     
     // 正四面体（マイナスはエラー）
