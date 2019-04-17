@@ -10,17 +10,34 @@ import Foundation
 
 class CommerceModel {
     
-    // パーセント
+    // パーセント（マイナスはエラー）
+    public func percent(den: Double, mol: Double) -> Double {
+        return mol / den * 100
+    }
     
-    // 原価１
+    // 原価１、原価２（マイナスはエラー）
+    public func cost1(list: Double, profit: Double) -> Double {
+        return list / (1 + profit)
+    }
     
-    // 原価２
+    // 原価３（マイナスはエラー）
+    public func cost2(sell: Double, loss: Double) -> Double {
+        return sell / (1 - loss)
+    }
     
-    // 原価３
+    // 割引率（マイナスはエラー）
+    public func discount(regPrice: Double, disPrice: Double) -> Double {
+        return (regPrice - disPrice) / regPrice
+    }
     
-    // 割引率
+    // 利益率（マイナスはエラー）
+    public func profit(sell: Double, cost: Double) -> Double {
+        return ((sell / cost)  - 1) * 100
+    }
     
-    // 利益率
+    // 損失率（マイナスはエラー）
+    public func loss(sell: Double, cost: Double) -> Double {
+        return (1 - (sell / cost)) * 100
+    }
     
-    // 損失率
 }

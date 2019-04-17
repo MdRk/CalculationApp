@@ -13,18 +13,21 @@ class ShapeModel {
     // sin
     public func fSin(angle: Double) -> Double {
         let angle = sin(rad(angle: angle)) * 10.0
+        
         return round(angle) / 10.0
     }
     
     // cos
     public func fCos(angle: Double) -> Double {
         let angle = cos(rad(angle: angle)) * 10.0
+        
         return round(angle) / 10.0
     }
     
     // tan（-90 < angle < 90）
     public func fTan(angle: Double) -> Double {
         let angle = tan(rad(angle: angle)) * 10.0
+        
         return round(angle) / 10.0
     }
     
@@ -51,6 +54,7 @@ class ShapeModel {
     // 扇形の弦の長さ(マイナスはエラー）
     public func bow(radius: Double, angle: Double) -> Double {
         let angle = angle/2
+        
         return 2 * radius * sin(rad(angle: angle))
     }
     
