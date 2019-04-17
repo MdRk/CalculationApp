@@ -10,9 +10,12 @@ import UIKit
 
 class CalculationViewController: UIViewController {
 
+    var numLabel = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(numLabel)
         // Do any additional setup after loading the view.
     }
     

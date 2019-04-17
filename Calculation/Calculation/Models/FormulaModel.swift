@@ -10,6 +10,9 @@ import Foundation
 
 class FormulaModel {
     
+    public var allFormulas: [[String]]?
+    public var allArguments: [[Int]]?
+    
     public let items = ["数の計算", "面積", "体積", "図形", "単位", "統計", "商取引"]
     
     // 数の計算
@@ -38,12 +41,11 @@ class FormulaModel {
     
     // 商取引
     public let commerce = ["パーセント", "原価１", "原価２", "原価３", "割引率", "利益率", "損失率", "", "", "", "", ""]
-    public let comArgu = [2, 2, 2, 2, 2, 2, 2]
-    
-    public var allFormulas: [[String]]?
+    public let comArgu = [2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0]
     
     init(){
         allFormulas = [numCalculations, areas, volumes, shapes, units, statistics, commerce]
+        allArguments = [numArgu, areaArgu, volumeArgu, shapeArgu, unitArgu, statisArgu, comArgu]
     }
     
 }

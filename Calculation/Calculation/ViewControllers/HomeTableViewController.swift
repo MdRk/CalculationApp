@@ -14,6 +14,7 @@ class HomeTableViewController: UIViewController {
     
     let formulaModel = FormulaModel()
     var nextViewTitle = ""
+    var nextNumLabel = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class HomeTableViewController: UIViewController {
         if segue.identifier == "toCalculationVC" {
             let nextVC = segue.destination as! CalculationViewController
             nextVC.navigationItem.title = nextViewTitle
+            nextVC.numLabel = nextNumLabel
         }
     }
 }
@@ -58,6 +60,8 @@ extension HomeTableViewController: UITableViewDelegate {
         formulaTableView.deselectRow(at: indexPath, animated: true)
         
         self.nextViewTitle = formulaModel.allFormulas![indexPath.section][indexPath.row]
+        self.nextNumLabel = formulaModel.allArguments![indexPath.section][indexPath.row]
+        
         if !(indexPath.section == 6 && indexPath.row >= 7) {
             self.performSegue(withIdentifier: "toCalculationVC", sender: nil)
         }
