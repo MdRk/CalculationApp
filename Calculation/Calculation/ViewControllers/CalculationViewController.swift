@@ -17,15 +17,29 @@ class CalculationViewController: UIViewController {
     @IBOutlet weak var arg4TextField: UITextField!
     
     let formulaModel = FormulaModel()
+    
+    let dummyView = UIView()
     var numLabel = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 使用するTextField以外は非表示にする
         arg1TextField.isHidden = true
         arg2TextField.isHidden = true
         arg3TextField.isHidden = true
         arg4TextField.isHidden = true
+        
+        // キーボードを非表示にする
+        arg1TextField.inputView = dummyView
+        arg2TextField.inputView = dummyView
+        arg3TextField.inputView = dummyView
+        arg4TextField.inputView = dummyView
+        
+        arg1TextField.delegate = self
+        arg2TextField.delegate = self
+        arg3TextField.delegate = self
+        arg4TextField.delegate = self
         
         formulaModel.oneText(frameView: calculationView, argTextField: arg1TextField)
     }

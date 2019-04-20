@@ -44,24 +44,23 @@ class FormulaModel {
     public let commerce = ["パーセント", "原価１", "原価２", "原価３", "割引率", "利益率", "損失率", "", "", "", "", ""]
     public let comArgu = [2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0]
     
+    
 // 引数１
     
     // 2進数、16進数、約数の個数、親和数、ラジアン
     public func oneText(frameView: UIView, argTextField: UITextField) {
+        
+        argTextField.isHidden = false
+        
         let groundView = UIView()
         
         groundView.frame = CGRect(x: 0, y: 0, width: frameView.frame.width, height: frameView.frame.height)
-        groundView.backgroundColor = .clear
         
         argTextField.frame = CGRect(x: 0, y: 0, width: groundView.frame.width/5, height: groundView.frame.height/10)
         argTextField.center = CGPoint(x: groundView.center.x, y: groundView.center.y)
         argTextField.backgroundColor = .white
-        
-        frameView.addSubview(groundView)
-        argTextField.isHidden = false
-        
-        argTextField.delegate = self as? UITextFieldDelegate
     }
+    
     
     init(){
         allFormulas = [numCalculations, areas, volumes, shapes, units, statistics, commerce]
