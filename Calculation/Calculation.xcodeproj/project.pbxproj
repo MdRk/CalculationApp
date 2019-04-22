@@ -25,6 +25,7 @@
 		32BE30B6226080AD001A7332 /* UnitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30B5226080AD001A7332 /* UnitModel.swift */; };
 		32BE30B8226083D2001A7332 /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30B7226083D2001A7332 /* StatisticsModel.swift */; };
 		32BE30BA22608452001A7332 /* CommerceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE30B922608452001A7332 /* CommerceModel.swift */; };
+		32C0604F226D7FD1000F189C /* OneArguModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0604E226D7FD1000F189C /* OneArguModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		32BE30B5226080AD001A7332 /* UnitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitModel.swift; sourceTree = "<group>"; };
 		32BE30B7226083D2001A7332 /* StatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
 		32BE30B922608452001A7332 /* CommerceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceModel.swift; sourceTree = "<group>"; };
+		32C0604E226D7FD1000F189C /* OneArguModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneArguModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				32744AA6226D79C200AFC5CB /* ItemModel.swift */,
-				32BE30AD2260766F001A7332 /* NumCalculationModel.swift */,
-				32BE30AF22607E69001A7332 /* AreaModel.swift */,
-				32BE30B122607F6D001A7332 /* VolumeModel.swift */,
-				32BE30B322607FF7001A7332 /* ShapeModel.swift */,
-				32BE30B5226080AD001A7332 /* UnitModel.swift */,
-				32BE30B7226083D2001A7332 /* StatisticsModel.swift */,
-				32BE30B922608452001A7332 /* CommerceModel.swift */,
+				32C0604A226D7F0D000F189C /* Formula */,
+				32C0604B226D7F68000F189C /* Display */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +177,28 @@
 				32B3AEBA21940F2900C14C20 /* Info.plist */,
 			);
 			path = CalculationUITests;
+			sourceTree = "<group>";
+		};
+		32C0604A226D7F0D000F189C /* Formula */ = {
+			isa = PBXGroup;
+			children = (
+				32BE30AD2260766F001A7332 /* NumCalculationModel.swift */,
+				32BE30AF22607E69001A7332 /* AreaModel.swift */,
+				32BE30B122607F6D001A7332 /* VolumeModel.swift */,
+				32BE30B322607FF7001A7332 /* ShapeModel.swift */,
+				32BE30B5226080AD001A7332 /* UnitModel.swift */,
+				32BE30B7226083D2001A7332 /* StatisticsModel.swift */,
+				32BE30B922608452001A7332 /* CommerceModel.swift */,
+			);
+			path = Formula;
+			sourceTree = "<group>";
+		};
+		32C0604B226D7F68000F189C /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				32C0604E226D7FD1000F189C /* OneArguModel.swift */,
+			);
+			path = Display;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +344,7 @@
 				32BE30B422607FF7001A7332 /* ShapeModel.swift in Sources */,
 				32BE30B8226083D2001A7332 /* StatisticsModel.swift in Sources */,
 				32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */,
+				32C0604F226D7FD1000F189C /* OneArguModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
