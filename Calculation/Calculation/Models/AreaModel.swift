@@ -26,8 +26,8 @@ class AreaModel {
     }
     
     // 円 （マイナスはエラー）
-    public func circle(radius1: Double, radius2: Double) -> Double {
-        return radius1 * radius2 * Double.pi
+    public func circle(radius: Double) -> Double {
+        return radius * radius * Double.pi
     }
     
     // 立方体 （マイナスはエラー）
