@@ -19,10 +19,15 @@ class CalculationViewController: UIViewController {
     
     let itemModel = ItemModel()
     let numCalculationModel = NumCalculationModel()
+    let oneArguModel = OneArguModel()
     
+    // キーボードを非表示にするためのダミーView
     let dummyView = UIView()
-    var numLabel = 0
+    // 公式を描画するための指標
+    var proof = 0
+    // 引数の数
     var argNum = 1
+    
     var answerNum = 0
     var answerString = ""
     
@@ -31,6 +36,7 @@ class CalculationViewController: UIViewController {
         super.viewDidLoad()
         
         setupTextField()
+        displayFormula(sender: proof)
     }
     
     private func setupTextField() {
@@ -60,8 +66,13 @@ class CalculationViewController: UIViewController {
         arg2TextField.delegate = self
         arg3TextField.delegate = self
         arg4TextField.delegate = self
+    }
+    
+    private func displayFormula(sender: Int) {
         
-        itemModel.oneText(frameView: calculationView, argTextField: arg1TextField)
+        if sender == 11 {
+            oneArguModel.oneText(frameView: calculationView, argTextField: arg1TextField)
+        }
     }
     
     private func inputTextNum(selectText: UITextField,  sender: UIButton) {
