@@ -28,7 +28,12 @@ class CalculationViewController: UIViewController {
     // 引数の数
     var argNum = 1
     
-    var answerNum = 0
+    var leftText = ""
+    var centText = ""
+    var rightText = ""
+    
+    var intAnswer: Int = 0
+    var doubleAnswer: Double = 0.0
     var answerString = ""
     
     override func viewDidLoad() {
@@ -36,7 +41,13 @@ class CalculationViewController: UIViewController {
         super.viewDidLoad()
         
         setupTextField()
-        displayFormula(sender: proof)
+        displayFormula(displayProof: proof)
+        
+        itemModel.numCalculations.forEach {
+            if $0 == navigationItem.title {
+                print($0)
+            }
+        }
     }
     
     private func setupTextField() {
@@ -44,11 +55,7 @@ class CalculationViewController: UIViewController {
         // 引数１を選択状態にする
         arg1TextField.becomeFirstResponder()
         
-        arg1TextField.text = ""
-        arg2TextField.text = ""
-        arg3TextField.text = ""
-        arg4TextField.text = ""
-        answerLabel.text = "="
+        textDelete()
         
         // 使用するTextField以外は非表示にする
         arg1TextField.isHidden = true
@@ -68,11 +75,50 @@ class CalculationViewController: UIViewController {
         arg4TextField.delegate = self
     }
     
-    private func displayFormula(sender: Int) {
+    private func textDelete() {
         
-        if sender == 11 {
-            oneArguModel.oneText(frameView: calculationView, argTextField: arg1TextField)
+        arg1TextField.text = ""
+        arg2TextField.text = ""
+        arg3TextField.text = ""
+        arg4TextField.text = ""
+        
+        answerLabel.text = "="
+    }
+    
+    private func displayFormula(displayProof: Int) {
+        
+        switch displayProof {
+        case 1:
+            oneArguModel.oneText(frameView: calculationView, argTextField: arg1TextField, title: navigationItem.title!)
+        case 2:
+            oneArguModel.oneTextTwoLabel(frameView: calculationView, argTextField: arg1TextField, leftText: leftText, rightText: rightText, title: navigationItem.title!)
+        case 3:
+            oneArguModel.oneTextRightLabel(frameView: calculationView, argTextField: arg1TextField, rightText: rightText, title: navigationItem.title!)
+        case 4:
+            oneArguModel.oneTextLeftLabel(frameView: calculationView, argTextField: arg1TextField, leftText: leftText, title: navigationItem.title!)
+        case 5:
+            oneArguModel.oneTextFraction(frameView: calculationView, argTextField: arg1TextField, leftText: leftText, rightText: rightText, title: navigationItem.title!)
+        default:
+            oneArguModel.oneText(frameView: calculationView, argTextField: arg1TextField, title: navigationItem.title!)
         }
+    }
+    
+    private func selectFormula(title: String) -> String {
+        
+        if title == "ガウス記号" {
+            doubleAnswer = Double(arg1TextField.text!)!
+            return numCalculationModel.gauss(num1: Double(doubleAnswer))
+        } else if title == "2進数" {
+            // arg1textfield.textの中に小数点があったらアラート
+            if (arg1TextField.text?.contains("."))! {
+                addAlert()
+                return ""
+            }
+            intAnswer = Int(arg1TextField.text!)!
+            return numCalculationModel.binary(num1: intAnswer)
+        }
+        
+        return ""
     }
     
     private func inputTextNum(selectText: UITextField,  sender: UIButton) {
@@ -87,14 +133,25 @@ class CalculationViewController: UIViewController {
         selectText.text = formulaText + senderedText
     }
     
+    private func addAlert() {
+        
+        let alert: UIAlertController = UIAlertController(title: "エラー", message: "数字を正しく入力してください。", preferredStyle: UIAlertController.Style.alert)
+        
+        // OKボタン
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("OK")
+            self.textDelete()
+        })
+        
+        alert.addAction(defaultAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func pushAllCleanBtn(_ sender: UIButton) {
         
-        arg1TextField.text = ""
-        arg2TextField.text = ""
-        arg3TextField.text = ""
-        arg4TextField.text = ""
-        
-        answerLabel.text = "="
+        textDelete()
     }
     
     @IBAction func pushCleanBtn(_ sender: UIButton) {
@@ -114,9 +171,7 @@ class CalculationViewController: UIViewController {
     
     @IBAction func pushEqualBtn(_ sender: UIButton) {
         
-        answerNum = Int(arg1TextField.text!)!
-        answerString = numCalculationModel.binary(num1: answerNum)
-        answerLabel.text = "= " + answerString
+        answerLabel.text = "= " + selectFormula(title: navigationItem.title!)
     }
     
     @IBAction func pushNumBtn(_ sender: UIButton) {
