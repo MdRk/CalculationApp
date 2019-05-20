@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3238B700226FE09E00CF5CA6 /* TwoArguModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238B6FF226FE09E00CF5CA6 /* TwoArguModel.swift */; };
 		324C571521E445D70068A242 /* CalculationModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C571421E445D70068A242 /* CalculationModelTest.swift */; };
 		32744AA7226D79C200AFC5CB /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32744AA6226D79C200AFC5CB /* ItemModel.swift */; };
 		32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AE9821940F2700C14C20 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3238B6FF226FE09E00CF5CA6 /* TwoArguModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoArguModel.swift; sourceTree = "<group>"; };
 		324C571421E445D70068A242 /* CalculationModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModelTest.swift; sourceTree = "<group>"; };
 		32744AA6226D79C200AFC5CB /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		32B3AE9521940F2700C14C20 /* Calculation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				32C0604E226D7FD1000F189C /* OneArguModel.swift */,
+				3238B6FF226FE09E00CF5CA6 /* TwoArguModel.swift */,
 			);
 			path = Display;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				32744AA7226D79C200AFC5CB /* ItemModel.swift in Sources */,
 				32BE30B222607F6D001A7332 /* VolumeModel.swift in Sources */,
 				32BE30B422607FF7001A7332 /* ShapeModel.swift in Sources */,
+				3238B700226FE09E00CF5CA6 /* TwoArguModel.swift in Sources */,
 				32BE30B8226083D2001A7332 /* StatisticsModel.swift in Sources */,
 				32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */,
 				32C0604F226D7FD1000F189C /* OneArguModel.swift in Sources */,

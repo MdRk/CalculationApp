@@ -20,6 +20,7 @@ class CalculationViewController: UIViewController {
     let itemModel = ItemModel()
     let numCalculationModel = NumCalculationModel()
     let oneArguModel = OneArguModel()
+    let twoArguModel = TwoArguModel()
     
     // キーボードを非表示にするためのダミーView
     let dummyView = UIView()
@@ -98,6 +99,12 @@ class CalculationViewController: UIViewController {
             oneArguModel.oneTextLeftLabel(frameView: calculationView, argTextField: arg1TextField, leftText: leftText, title: navigationItem.title!)
         case 5:
             oneArguModel.oneTextFraction(frameView: calculationView, argTextField: arg1TextField, leftText: leftText, rightText: rightText, title: navigationItem.title!)
+        case 6:
+            twoArguModel.twoTextOneLabel(frameView: calculationView, argTextField1: arg1TextField, argTextField2: arg2TextField, centText: centText, title: navigationItem.title!)
+        case 7:
+            twoArguModel.twoText(frameView: calculationView, argTextField1: arg1TextField, argTextField2: arg2TextField)
+        case 8:
+            twoArguModel.twoTextMultiLabel(frameView: calculationView, argTextField1: arg1TextField, argTextField2: arg2TextField, leftText: leftText, centText: &centText, rightText: rightText, title: navigationItem.title!)
         default:
             oneArguModel.oneText(frameView: calculationView, argTextField: arg1TextField, title: navigationItem.title!)
         }

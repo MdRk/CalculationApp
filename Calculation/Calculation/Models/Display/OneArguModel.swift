@@ -40,12 +40,8 @@ class OneArguModel {
     public func oneText(frameView: UIView, argTextField: UITextField, title: String) {
         
         // TextFieldの座標の倍率を変更
-        switch title {
-        case "内心における角度２", "内心における角度３":
+        if (title == "内心における角度２") || (title == "内心における角度３") {
             textYPoint = 1.7
-        default:
-            textXPoint = 1
-            textYPoint = 1
         }
         
         // TextFieldを表示
@@ -60,7 +56,7 @@ class OneArguModel {
         argTextField.backgroundColor = .white
         
         // 図形のimageViewを設定
-        glaphImage.backgroundColor = .gray
+        glaphImage.backgroundColor = .groupTableViewBackground
         glaphImage.frame = CGRect(x: 0, y: 0, width: (groundView.frame.height/3)*2, height: (groundView.frame.height/3)*2)
         glaphImage.center.x = groundView.center.x
         
@@ -85,7 +81,7 @@ class OneArguModel {
         case "π ×", "6 ×":
             textXPoint = 1.12
             textYPoint = 1.7
-        case "4π × ", "√3 × ", "2√3 ×", "5√3 ×":
+        case "4π ×", "√3 ×", "2√3 ×", "5√3 ×":
             textXPoint = 1.15
             textYPoint = 1.7
         case "3√(25 + 10√5) ×":
@@ -122,7 +118,7 @@ class OneArguModel {
         rightLabel.text = rightText
         
         // 図形のimageViewを設定
-        glaphImage.backgroundColor = .gray
+        glaphImage.backgroundColor = .groupTableViewBackground
         glaphImage.frame = CGRect(x: 0, y: 0, width: (groundView.frame.height/3)*2, height: (groundView.frame.height/3)*2)
         glaphImage.center.x = groundView.center.x
         
@@ -157,11 +153,8 @@ class OneArguModel {
     public func oneTextRightLabel(frameView: UIView, argTextField: UITextField, rightText: String, title: String) {
         
         // TextFieldの座標の倍率を変更
-        switch rightText {
-        case "³":
+        if rightText == "³" {
             textYPoint = 1.7
-        default:
-            textYPoint = 1
         }
         
         // TextField表示
@@ -183,7 +176,7 @@ class OneArguModel {
         rightLabel.text = rightText
         
         // 図形のimageViewを設定
-        glaphImage.backgroundColor = .gray
+        glaphImage.backgroundColor = .groupTableViewBackground
         glaphImage.frame = CGRect(x: 0, y: 0, width: (groundView.frame.height/3)*2, height: (groundView.frame.height/3)*2)
         glaphImage.center.x = groundView.center.x
         
@@ -235,7 +228,7 @@ class OneArguModel {
         leftLabel.text = leftText
         
         // 図形のimageViewを設定
-        glaphImage.backgroundColor = .gray
+        glaphImage.backgroundColor = .groupTableViewBackground
         glaphImage.frame = CGRect(x: 0, y: 0, width: (groundView.frame.height/3)*2, height: (groundView.frame.height/3)*2)
         glaphImage.center.x = groundView.center.x
         
@@ -331,7 +324,7 @@ class OneArguModel {
         }()
         
         // 図形のimageViewを設定
-        glaphImage.backgroundColor = .gray
+        glaphImage.backgroundColor = .groupTableViewBackground
         glaphImage.frame = CGRect(x: 0, y: 0, width: (groundView.frame.height/3)*2, height: (groundView.frame.height/3)*2)
         glaphImage.center.x = groundView.center.x
         
