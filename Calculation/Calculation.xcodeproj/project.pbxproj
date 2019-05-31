@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		3238B700226FE09E00CF5CA6 /* TwoArguModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238B6FF226FE09E00CF5CA6 /* TwoArguModel.swift */; };
 		324C571521E445D70068A242 /* CalculationModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C571421E445D70068A242 /* CalculationModelTest.swift */; };
+		3253602D22922CA100096420 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253602C22922CA100096420 /* Power.swift */; };
 		32744AA7226D79C200AFC5CB /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32744AA6226D79C200AFC5CB /* ItemModel.swift */; };
+		3298393A22938B5F0057F4FF /* UIViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3298393922938B5F0057F4FF /* UIViewBorder.swift */; };
 		32B3AE9921940F2700C14C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3AE9821940F2700C14C20 /* AppDelegate.swift */; };
 		32B3AEA021940F2900C14C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AE9F21940F2900C14C20 /* Assets.xcassets */; };
 		32B3AEA321940F2900C14C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B3AEA121940F2900C14C20 /* LaunchScreen.storyboard */; };
@@ -49,7 +51,9 @@
 /* Begin PBXFileReference section */
 		3238B6FF226FE09E00CF5CA6 /* TwoArguModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoArguModel.swift; sourceTree = "<group>"; };
 		324C571421E445D70068A242 /* CalculationModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModelTest.swift; sourceTree = "<group>"; };
+		3253602C22922CA100096420 /* Power.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
 		32744AA6226D79C200AFC5CB /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		3298393922938B5F0057F4FF /* UIViewBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewBorder.swift; sourceTree = "<group>"; };
 		32B3AE9521940F2700C14C20 /* Calculation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B3AE9821940F2700C14C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B3AE9F21940F2900C14C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +132,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		3253602B22922C5C00096420 /* NumCalculation */ = {
+			isa = PBXGroup;
+			children = (
+				3253602C22922CA100096420 /* Power.swift */,
+			);
+			path = NumCalculation;
+			sourceTree = "<group>";
+		};
 		32B3AE8C21940F2700C14C20 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				32B3AE9821940F2700C14C20 /* AppDelegate.swift */,
+				3298393922938B5F0057F4FF /* UIViewBorder.swift */,
 				324FB0E32253AB1000139945 /* Models */,
 				32181C3F2199807A009290A9 /* ViewControllers */,
 				32181C4021998084009290A9 /* Storyboards */,
@@ -184,6 +197,7 @@
 		32C0604A226D7F0D000F189C /* Formula */ = {
 			isa = PBXGroup;
 			children = (
+				3253602B22922C5C00096420 /* NumCalculation */,
 				32BE30AD2260766F001A7332 /* NumCalculationModel.swift */,
 				32BE30AF22607E69001A7332 /* AreaModel.swift */,
 				32BE30B122607F6D001A7332 /* VolumeModel.swift */,
@@ -340,7 +354,9 @@
 				32BE30B022607E69001A7332 /* AreaModel.swift in Sources */,
 				32BE30AC22604149001A7332 /* CalculationViewController.swift in Sources */,
 				32BE30AE2260766F001A7332 /* NumCalculationModel.swift in Sources */,
+				3298393A22938B5F0057F4FF /* UIViewBorder.swift in Sources */,
 				32BE30A82260326B001A7332 /* HomeTableViewController.swift in Sources */,
+				3253602D22922CA100096420 /* Power.swift in Sources */,
 				32BE30B6226080AD001A7332 /* UnitModel.swift in Sources */,
 				32744AA7226D79C200AFC5CB /* ItemModel.swift in Sources */,
 				32BE30B222607F6D001A7332 /* VolumeModel.swift in Sources */,

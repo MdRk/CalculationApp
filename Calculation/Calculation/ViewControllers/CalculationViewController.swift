@@ -16,6 +16,7 @@ class CalculationViewController: UIViewController {
     @IBOutlet weak var arg3TextField: UITextField!
     @IBOutlet weak var arg4TextField: UITextField!
     @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var backImage: UIImageView!
     
     let itemModel = ItemModel()
     let numCalculationModel = NumCalculationModel()
@@ -40,6 +41,7 @@ class CalculationViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         
         setupTextField()
         displayFormula(displayProof: proof)
