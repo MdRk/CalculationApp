@@ -15,6 +15,9 @@ class HomeTableViewController: UIViewController {
     let itemModel = ItemModel()
     var nextViewTitle = ""
     var nextProof = 0
+    var nextLeftText = ""
+    var nextCentText = ""
+    var nextRightText = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,9 @@ class HomeTableViewController: UIViewController {
             let nextVC = segue.destination as! CalculationViewController
             nextVC.navigationItem.title = nextViewTitle
             nextVC.proof = nextProof
+            nextVC.leftText = nextLeftText
+            nextVC.centText = nextCentText
+            nextVC.rightText = nextRightText
         }
     }
 }
@@ -60,7 +66,10 @@ extension HomeTableViewController: UITableViewDelegate {
         formulaTableView.deselectRow(at: indexPath, animated: true)
         
         self.nextViewTitle = itemModel.allFormulas![indexPath.section][indexPath.row]
-        self.nextProof = itemModel.allArguments![indexPath.section][indexPath.row]
+        self.nextProof = itemModel.displayProof![indexPath.section][indexPath.row]
+        self.nextLeftText = itemModel.allLeftText![indexPath.section][indexPath.row]
+        self.nextCentText = itemModel.allCentText![indexPath.section][indexPath.row]
+        self.nextRightText = itemModel.allRightText![indexPath.section][indexPath.row]
         
         if !(indexPath.section == 6 && indexPath.row >= 7) {
             self.performSegue(withIdentifier: "toCalculationVC", sender: nil)

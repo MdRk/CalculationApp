@@ -53,9 +53,9 @@ class ShapeModel {
     
     // 扇形の弦の長さ(マイナスはエラー）
     public func bow(radius: Double, angle: Double) -> Double {
-        let angle = angle/2
+        let angle = rad(angle: angle)/2
         
-        return 2 * radius * sin(rad(angle: angle))
+        return 2 * radius * sin(angle)
     }
     
     // 外接円の半径(マイナスはエラー）
